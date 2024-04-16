@@ -1,0 +1,2 @@
+For every test script in the test directory, there will be one or more files in this directory with the output of the test.
+The name of the result file should start with the name of the test script.

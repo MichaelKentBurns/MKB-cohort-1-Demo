@@ -1,0 +1,1 @@
+This directory will contain test scripts in the form of simple text files, or any other type of test.
