@@ -2,7 +2,7 @@
 Where the MichaelKentBurns.com students in cohort-1 can demonstrate what they have learned
 
 ## About MichaelKentBurns.com
-See: [https://MichaelKentBurns.com/]()
+See: [https://MichaelKentBurns.com/](https://MichaelKentBurns.com/)
 
 This site is a training site that is just getting started.
 
