@@ -35,10 +35,10 @@ Ensures the user interface is intuitive and user-friendly.
 Defines the initial structure for the JSON file that will store student feedback data. This may optionally include the creation of a MySQL database schema.
 ### Documentation: Efatha
 While each team member will write some documentation during the project, this person is responsible for putting it all together and reviewing the documentation.  The documentation starts with this README.md file.
-### Front end lead:
+### Front end lead: Philemon
 Orchestrates the efforts of the Web Page Author and oversees any additional front-end elements, potentially including JavaScript code.
 Manages the process of transforming user input from the form into the designated JSON file format.
-### Back end lead:
+### Back end lead: Ash
 Develops the back-end code responsible for processing the generated JSON files. This may involve functions to insert or update data records within a MySQL database (if applicable).
 Oversees the deployment of the final application onto the designated demo platform (demo.MichaelKentBurns.com), enabling public access and future student use.
 
