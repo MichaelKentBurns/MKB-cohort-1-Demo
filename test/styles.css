@@ -53,4 +53,6 @@ img.avatar {
 /* Add padding to containers */
 .container {
   padding: 16px;
+  margin-right: 20%;
+  margin-left: 20%;
 }
