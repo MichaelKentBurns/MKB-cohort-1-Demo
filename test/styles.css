@@ -2,7 +2,9 @@
          form {
   border: 3px solid #eeee;
 }
-
+body{
+    background-color: rgb(189,189,189);
+}
 /* Full-width inputs */
 input[type=text], input[type=email] {
   width: 100%;
