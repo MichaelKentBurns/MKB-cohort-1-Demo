@@ -58,3 +58,7 @@ img.avatar {
   margin-right: 20%;
   margin-left: 20%;
 }
+textarea{
+    width:100%;
+    display: flex;
+}
