@@ -65,6 +65,8 @@ textarea{
 select{
     display:flex;
     margin-top: 10px;
+    height:22px;
+    border-radius:5px 4px 5px 4px;
   }
   .developer{
     box-shadow:2px 2px 2px 2px ;
@@ -91,5 +93,5 @@ select{
     opacity: 0.6;
   }  
   .markup_languages{
-    width:20px;
+    width:17px;
   }
