@@ -1,5 +1,5 @@
 /*this style is made for keeping this page smooth*/
-         form {
+  form {
   border: 3px solid #eeee;
 }
 body{
@@ -93,13 +93,13 @@ select{
     opacity: 0.6;
   } 
   select:hover{
-    select:hover{
+
       border: 2px outset green;
       box-shadow: 3px 3px 4px 4px green ;
       border-radius: 5px 5px 5px 5px;
       opacity: 0.6;
-    }
-  } 
+     }
+ 
   .markup_languages{
     width:17px;
   }
