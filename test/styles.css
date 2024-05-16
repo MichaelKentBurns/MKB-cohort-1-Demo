@@ -4,6 +4,7 @@
 }
 body{
     background-color: rgb(189,189,189);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* Full-width inputs */
 input[type=text], input[type=email] {
@@ -103,3 +104,14 @@ select{
   .markup_languages{
     width:17px;
   }
+  @media(max-width:768px) {
+    .submit{
+      font-size: large;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: 1px solid black;
+      border-radius: 10px 10px 10px 10px;
+      flex:1;
+      max-width: 100%;
+    }
+  }
+  
