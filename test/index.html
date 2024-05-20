@@ -1,98 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>MKB-cohort-1-Demo</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=0.1">
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <form action="" method="">
-         <!-- This avatar image is for testing design-->
-         <div class="imgcontainer">
-           <img src="./lap.jpg" alt="Avatar" class="avatar">
-         </div>
-         <!--This code gives a simple instruction about this page-->
-           <div class="instruction"><button type="button" onclick="alert('Welcome to MKB-cohort-1-Demo . In this part you are going to complete all these questions, then once you fill them all out , click on the submission button.')">click here</button></div>
-         <!--The beginning of the form-->
-           <div class="container">
-           <label for="username"><b>Username</b></label>
-           <input type="text" placeholder="Enter your Username" name="username" id="username" required>
-       
-           <label for="first-name"><br>First name<br></label>
-           <input type="text" name="first-name" placeholder="Enterv your First name" id="first-name" required>
-
-           <label for="email"><b>Email</b></label>
-           <input type="email" placeholder="Enter your Email" name="email" id="email" required>
-           
-           <labe for="gender"><br>Select your gender</br></label>
-           <select id="gender">
-             <optgroup label="Choose your gender">
-               <option value="masculin">Male</option>
-               <option value="feminin">Female</option>
-             </optgroup>  
-           </select>
-           <div class="developer">
-            <label for="developer"><br>Which kind of web developer do you think you are?<br></label>
-            <input type="radio" name="developer">Front-end developer<br>
-            <input type="radio" name="developer">Back-end developer<br>
-            <input type="radio" name="developer">Full stack developer<br>
-          </div>
-          <br/>
-          <label for="programing_language">Choose one language that you have strong understandings currenctly</label>
-            <select>
-              <optgroup label="markup_languages">
-                 <option value="HTML">HTML</option>
-                 <option value="XML">XML</option>
-                 <option value="Markdown">Markdown</option>
-                 <option value="JSON(JavaScript-Object-Notation)">JSON(JavaScript Object Notation)</option>
-                 <option value="YAML(YAML-Ain't-Markup-language)">YAML(YAML Ain't Markup language)</option>
-                 <option value="SGML">SGML(Standard Generalized Markup Language)</option>
-                 <option value="LaTex">LaTex</option>
-              </optgroup>
-              <optgroup label="server-side_language">
-                <option value="PHP">PHP</option>
-                <option value="Python">Python</option>
-                <option value="JavaScript(Node.js)">JavaScript(Node.js)</option>
-                <option value="Java">Java</option>
-                <option value="C#">C#</option>
-                <option value="Ruby">Ruby</option>
-                <option value="MySQL">MySQL</option>
-             </optgroup>
-            </select>
-           
-           <br>
-          <label for="username"><b>what programing language are you proficient in?</b></label><br>
-          <textarea id="username" required></textarea>
-          <br>
-          <label for="username"><b>Can you provide examples of websites or web applications you've developed?</b></label><br>
-          <textarea id="username" required></textarea>
-          <br>
-          <label for="username"><b>Do you have an experience with front-end, back-end, or full stack?</b></label><br>
-          <textarea id="username" required></textarea>
-          <br>
-          <label for="username"><b>Are you familiar with version control systems like Git?</b></label><br>
-          <textarea id="username" required></textarea>
-          <br>
-          <div class="development">
-            <label for="developer"><br>What are your web development tools including the text editors that you use?<br></label>
-            <input type="checkbox" name="developer">Visual Studio Code<br>
-            <input type="checkbox" name="developer">Sublime text<br>
-            <input type="checkbox" name="developer">Atom for writing code<br>
-            <input type="checkbox" name="developer">Git for pushing your work<br>
-            <input type="checkbox" name="developer">Browsers like chrome or firefox for testing<br>
-            <input type="checkbox" name="developer">framework and libraries like React, Angular or Vue.js for building frontend interfaces<br>
-          </div>
-
-          <label for="username"><b>Can you describe a challenging problem you encounted in a project and how you solve it?</b></label><br>
-          <textarea id="username" required></textarea>
-          <br>
-          <button type="submit">Submission</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-      </form>
-      
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey App</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Survey Ap</h1>
+  <p>choose your questionnaire by clicking below</p>
+  <div id="survey-list"></div>
+   <!-- This avatar image is for testing design-->
+   <!-- <div class="imgcontainer">
+    <img src="./lap.jpg" alt="Avatar" class="avatar">
+  </div> -->
+  <!--This code gives a simple instruction about this page-->
+    <div class="instruction"><button type="button" onclick="alert('Welcome to MKB-cohort-1-Demo . In this part you are going to complete all these questions, then once you fill them all out , click on the submission button.')">Instructions here</button></div>
+  <!--The beginning of the form-->
+  <form action="" method="" id="question-container"></form>
+  <script src="./script.js"></script>
+</body>
 </html>

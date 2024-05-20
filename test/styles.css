@@ -1,5 +1,30 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+#survey-list {
+  margin-bottom: 20px;
+}
+
+#survey-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#survey-list li {
+  margin-bottom: 10px;
+}
+
+#question-container {
+  display: none;
+}
+
+#question-container h2 {
+  margin-bottom: 10px;
+}
 /*this style is made for keeping this page smooth*/
-  form {
+form {
   border: 3px solid #eeee;
 }
 body{
@@ -104,6 +129,7 @@ select{
   .markup_languages{
     width:17px;
   }
+<<<<<<< HEAD
   @media(max-width:768px) {
     .submit{
       font-size: large;
@@ -115,3 +141,8 @@ select{
     }
   }
   
+=======
+  li{
+    cursor: pointer;
+  }
+>>>>>>> 04244a02381558e34967fd232c903bcf04e06d3b
