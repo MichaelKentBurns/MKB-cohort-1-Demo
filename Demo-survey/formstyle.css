@@ -1,4 +1,13 @@
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(116, 149, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 0;
+}
 .form-container {
     background-color: #e4e4e4ee;
     padding: 20px;
