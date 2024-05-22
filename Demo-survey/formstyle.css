@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(116, 149, 125);
+    background-image: url(map-image.png);
     display: flex;
     justify-content: center;
     align-items: center;
