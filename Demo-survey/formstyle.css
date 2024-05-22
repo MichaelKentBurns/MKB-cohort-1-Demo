@@ -52,3 +52,12 @@ p {
     color: #666;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+input:hover,select:hover{
+    top: -2px;
+    cursor: pointer;
+    border: 2px outset rgb(83, 177, 83);
+    box-shadow: 3px 3px 4px 4px green ;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0.6;
+  }
+  
