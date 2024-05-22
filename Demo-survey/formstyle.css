@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     margin: 0;
 }
 .form-container {
@@ -17,7 +17,9 @@ body {
     width: 100%;
     max-width: 400px;
 }
-
+.form-group {
+    margin-bottom: 15px;
+}
 input[type="text"],
 select,
 textarea {
