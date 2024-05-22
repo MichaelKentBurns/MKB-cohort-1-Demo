@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
     margin: 0;
 }
 .form-container {
@@ -42,4 +42,10 @@ h1 {
     font-size: 24px;
     color: #333;
     text-align: center;
+}
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
