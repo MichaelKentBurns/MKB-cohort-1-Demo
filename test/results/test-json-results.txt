@@ -1,0 +1,30 @@
+Scenario: Completing a survey with informative feedback and optional data saving.
+
+1. Application Load:
+
+User opens the application.
+Desired Result: The survey form with clear questions and answer options is displayed.
+
+2. Survey Completion:
+
+User interacts with form elements to provide answers.
+Example: User types their name in a text field for the question "What's your first name?".
+
+Desired Result: User input is validated and accepted. Form elements should provide clear feedback if invalid input is entered.
+3. Survey Submission:
+
+User clicks the "Submit Survey" button.
+Desired Result:
+The application displays the summary of the submitted answers
+4. Data Display:
+
+Desired Result:
+The application displays the JSON representation of the submitted data in a formatted pre element.
+This allows the user to see the exact data submitted.
+5. Saving Data
+
+User clicks the "Save Survey Results (JSON)" button. 
+Desired Result:
+The user sees a json file with the results in the downloads folder.
+The filename is based on user input (e.g., "John responses frontend-questions-1658172800000.json".
+The user chooses a desired location and saves the file. They can rename the file if needed within the "Save As" dialog.

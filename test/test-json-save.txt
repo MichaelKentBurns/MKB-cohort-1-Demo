@@ -1,0 +1,11 @@
+Scenario: Filling out a survey and saving the results
+
+User opens the application (your web page with the survey form).
+User sees the survey questions. (The survey questions and answer options should be displayed clearly.)
+User fills out the survey. (The user interacts with the form elements to provide answers.)
+User clicks the "Submit" button. (A button should be clearly labeled for submitting the form.)
+The application displays the JSON representation of the submitted data in a formatted pre element. (The user can see the exact data submitted in json format.)
+The application displays a "Save Survey Results (JSON)" button. (This button allows the user to save the data.)
+User clicks the "Save Survey Results (JSON)" button.
+The json file is downloaded to the downloads folder.
+Or The user can "save as" that page to a desired location.
