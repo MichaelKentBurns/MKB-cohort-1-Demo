@@ -64,3 +64,11 @@ input:hover,select:hover{
     background-color: #4a934d;
     opacity:0.7;
 }
+select {
+    background-color:#ffff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
