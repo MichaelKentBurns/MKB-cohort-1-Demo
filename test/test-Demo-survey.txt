@@ -35,6 +35,6 @@ Actual result: (to be filled during execution.)
 3. Preconditions: Make sure that the application form page is loaded
 4. Test steps: 
    Click on the top button labeled instruction button.
-   Expected result:An error message is displayed indicating  that the required fields must be filled in.
+   Expected result: Display the alert box with some instructions.
 
  
