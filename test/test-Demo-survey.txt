@@ -1,0 +1,40 @@
+## The objectives of this Form is to create a responsive application 
+for laying out and gathers the feedback of identities and questions on our users learning skills. 
+ 
+__Test Demo survey__
+When you open the first page form your browser,  you reach directly the first page which contains the instruction button
+and scripts telling you how it functions. If you click the button "instuctions here" you  will get the alert box 
+containing some instructions, once you're done with reading them, click on the button labeled "ok" to get back 
+to the main page, then read the supplementary news item. 
+You will find an unstylish link that will dive you into the form page. That link is nominated "MKB-cohort-1-Demo"
+Click to link to go to demo survey form page.
+__
+1. Ensuring if the form runs all required information correctly with a friendly interface for users .
+2. For testing this the Demo-survey project you should consider fields, validation, submission, error and handling.
+ 
+##  Identify key functionalities
+In this page we only have one text box area with a dropdown menu and two inputs designed for the first and last name.
+## In the validation rule: you are required to fill all the fields so that you don't get an error message. 
+User experience : For the best and esiest use of this application, you can use the instruction button on the top of the opening page.
+
+## Here are some developed details of this test:
+
+1. Test case ID: TC-01  
+2.  Description: 
+verify that the form shows an error message when required fields
+are left empty.
+3. Preconditions:Make sure that the application form page is loaded
+4. Test steps: 
+First-step: Leave all required  fields empty.
+Second-step: Click the "submit" button.
+expected result:An error message is displayed indicating  that the required fields must be filled in.
+Actual result: (to be filled during execution.)
+
+1. Test case ID: TC-02
+2.  Description: Verify that the form displays an alert when the "instuction here" button is clicked on the first page.
+3. Preconditions: Make sure that the application form page is loaded
+4. Test steps: 
+   Click on the top button labeled instruction button.
+   Expected result:An error message is displayed indicating  that the required fields must be filled in.
+
+ 
