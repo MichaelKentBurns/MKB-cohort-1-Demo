@@ -129,20 +129,6 @@ select{
   .markup_languages{
     width:17px;
   }
-<<<<<<< HEAD
-  @media(max-width:768px) {
-    .submit{
-      font-size: large;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      border: 1px solid black;
-      border-radius: 10px 10px 10px 10px;
-      flex:1;
-      max-width: 100%;
-    }
-  }
-  
-=======
   li{
     cursor: pointer;
   }
->>>>>>> 04244a02381558e34967fd232c903bcf04e06d3b
