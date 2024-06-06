@@ -158,3 +158,9 @@ select{
       color: #333;
       text-align: center;
   }
+  p,#survey-list ul,h1{
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #666;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
