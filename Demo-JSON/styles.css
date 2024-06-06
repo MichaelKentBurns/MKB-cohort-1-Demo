@@ -1,7 +1,7 @@
 body {
   font-family:Arial, sans-serif;
   margin: 20px;
-  background-color: rgb(189,189,189);
+  background-color: rgb(116, 149, 125);
   /*font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   display:flex;
   justify-content:center;
