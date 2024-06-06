@@ -1,6 +1,13 @@
 body {
-  font-family: sans-serif;
+  font-family:Arial, sans-serif;
   margin: 20px;
+  background-color: rgb(189,189,189);
+  /*font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+  display:flex;
+  justify-content:center;
+  height:150vh;
+
+
 }
 
 #survey-list {
@@ -26,10 +33,6 @@ body {
 /*this style is made for keeping this page smooth*/
 form {
   border: 3px solid #eeee;
-}
-body{
-    background-color: rgb(189,189,189);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* Full-width inputs */
 input[type=text], input[type=email] {
