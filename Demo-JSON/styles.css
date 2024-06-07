@@ -10,7 +10,6 @@ body {
   width:100%;
   max-width: -400px;
   background-image: url(map-image.png);
-
 }
 
 #survey-list {
@@ -49,18 +48,20 @@ input[type=text], input[type=email] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  width: 100%;
+  background-color:rgb(116, 149, 125);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-  width: 100%;
 }
 
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
+  background-color: #4a934d;
 }
 
 /* Extra style for the cancel button (red) */
@@ -118,20 +119,14 @@ select{
     padding-bottom: 20px;
     margin-bottom: 20px;
  }
- input:hover{
-    border: 2px outset green;
-    box-shadow: 3px 3px 4px 4px green ;
-    border-radius: 5px 5px 5px 5px;
-    opacity: 0.6;
-  } 
-  select:hover{
-
-      border: 2px outset green;
-      box-shadow: 3px 3px 4px 4px green ;
-      border-radius: 5px 5px 5px 5px;
-      opacity: 0.6;
-     }
- 
+ input:hover,select:hover{
+  top: -2px;
+  cursor: pointer;
+  border: 2px outset rgb(83, 177, 83);
+  box-shadow: 3px 3px 4px 4px green ;
+  border-radius: 5px 5px 5px 5px;
+  opacity: 0.6;
+}
   .markup_languages{
     width:17px;
   }
