@@ -7,7 +7,7 @@ body {
   flex-direction:column;
   justify-content:center;
   align-items: center;
-  height:150vh;
+  height:190vh;
   width:100%;
   max-width: -400px;
   background-image: url(map-image.png);
