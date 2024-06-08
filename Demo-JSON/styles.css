@@ -21,7 +21,7 @@ pre{
     border:1px solid #ddd;
     border-radius: 5px 3px 3px 5px ;
     max-height: 300vh;
-    overflow: auto;
+    overflow: hidden;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #survey-list {
@@ -47,7 +47,7 @@ pre{
 /*this style is made for keeping this page smooth*/
 form {
   border: 0px solid #eeee;
- 
+  border-radius: 0px 0px 0px 1px ;
 }
 /* Full-width inputs */
 input[type=text], input[type=email] {
