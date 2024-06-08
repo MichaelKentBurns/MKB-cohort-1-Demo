@@ -17,6 +17,12 @@ pre{
   word-wrap: break-word;
   padding-right:2px;
   margin-bottom: 20px;
+  background-color: #a1c3a2;
+    border:1px solid #ddd;
+    border-radius: 5px 3px 3px 5px ;
+    max-height: 300vh;
+    overflow: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #survey-list {
   margin-bottom: 20px;
