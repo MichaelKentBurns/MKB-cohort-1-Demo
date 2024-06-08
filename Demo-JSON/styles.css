@@ -7,12 +7,17 @@ body {
   flex-direction:column;
   justify-content:center;
   align-items: center;
-  height:190vh;
+  /*height:190vh;*/
   width:100%;
   max-width: -400px;
   background-image: url(map-image.png);
 }
-
+pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-right:2px;
+  margin-bottom: 20px;
+}
 #survey-list {
   margin-bottom: 20px;
 }
