@@ -148,6 +148,7 @@ select{
   }
   .form-container{
     max-width:440px;
+    overflow: hidden;
     }
     h1, #survey-list {
       margin-bottom: 10px;
