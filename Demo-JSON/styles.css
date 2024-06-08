@@ -46,7 +46,8 @@ pre{
 }
 /*this style is made for keeping this page smooth*/
 form {
-  border: 3px solid #eeee;
+  border: 0px solid #eeee;
+ 
 }
 /* Full-width inputs */
 input[type=text], input[type=email] {
