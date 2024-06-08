@@ -147,6 +147,9 @@ select{
     cursor: pointer;
     display:inline-block;
     padding-right: 100%;
+    margin-top: 20px;
+    padding-left: 160px;
+    padding-top: 10px;
   }
   .form-container,#question-container,.container{
     
@@ -158,9 +161,16 @@ select{
     max-width: 400px;
   }
   .form-container{
-    max-width:440px;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
+    width: 100%;
+    max-width: 440px;
     overflow: hidden;
-    }
+    
+}
+    
     h1, #survey-list {
       margin-bottom: 10px;
       font-size: 24px;
