@@ -1,6 +1,6 @@
 body {
   font-family:Arial, sans-serif;
-  margin: 20px;
+  margin: 5px;
   background-color: rgb(116, 149, 125);
   /*font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   display:flex;
@@ -34,7 +34,7 @@ pre{
 }
 
 #survey-list li {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 #question-container {
