@@ -60,11 +60,12 @@ function displaySurvey(data) {
     event.preventDefault(); // Prevent default form submission behavior
     const surveyData = {
       title: data.title,
-      // questions: data.questions,
       answers: answers // Add the collected answers object
     };
+
+ 
    saveSurveyResults(surveyData); // Call the function to save data
-    console.log(surveyData)
+
   })
 
   questionContainerElement.appendChild(questionsList);
@@ -101,16 +102,40 @@ function saveSurveyResults(data) {
     document.body.appendChild(downloadLink);
     downloadLink.click();
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
+
+    //send survey results
+
+    fetch('http://localhost:1234/Demo-backend', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(result => {
+        console.log('Success:', result);
+        if (result.status === 'success') {
+          alert('Survey results saved successfully!');
+        } else {
+          alert('Error: ' + result.message);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error saving survey results: ' + error.message);
+      });
+
+    
   });
+
+ 
 }
-
-
-
-
-
-
-
-
 // Function to populate the survey list based on available files
 function populateSurveyList() {
   const surveyList = [
@@ -134,3 +159,4 @@ function populateSurveyList() {
 }
 
 populateSurveyList(); // Call the function to populate the list on load
+
