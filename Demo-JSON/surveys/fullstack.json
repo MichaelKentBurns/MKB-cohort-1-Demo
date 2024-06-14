@@ -2,22 +2,27 @@
     "title": "Fullstack Questions",  
     "questions": [
       {
+        "id":1,
         "type": "text",  
         "text": "What's your first name?"  
       },
       {
+        "id":2,
         "type": "text",  
         "text": "What is your last name?"  
       },
       {
+        "id":3,
         "type": "text",  
         "text": "What is your email?"  
       },
       {
+        "id":4,
         "type": "text",  
         "text": "Do you primarily develop back-end applications for deployment on cloud platforms or on-premise servers?"  
       },
       {
+        "id":5,
         "type": "multiple-choice",  
         "text": "What is your favorite programming language?", 
         "options": [  
@@ -29,8 +34,29 @@
         ]
       },
       {
+        "id":6,
         "type": "text",  
         "text": "Have you encountered any challenges in integrating with third-party APIs in the past? If so, what were they?"  
+      },
+      {
+        "id":7,
+        "type": "text",  
+        "text": "The world of web development is constantly evolving. How do you stay up-to-date on the latest trends and technologies impacting both front-end and back-end development?"  
+      },
+      {
+        "id":8,
+        "type": "text",  
+        "text": "Many full-stack developers choose to specialize in a particular area (e.g., front-end heavy, back-end heavy). Do you have a preference, and if so, how do you stay proficient in the other area to maintain your full-stack skillset?"  
+      },
+      {
+        "id":9,
+        "type": "text",  
+        "text": "Beyond technical skills, what soft skills do you consider most important for success as a full-stack developer? Why?"  
+      },
+      {
+        "id":10,
+        "type": "text",  
+        "text": "Communication and collaboration are key in full-stack development. Describe a situation where your ability to bridge the gap between front-end and back-end teams proved beneficial to a project. "  
       }
     ]
   }
