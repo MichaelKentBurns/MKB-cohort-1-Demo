@@ -2,22 +2,27 @@
     "title": "Backend Questions",  
     "questions": [
       {
+        "id":1,
         "type": "text",  
         "text": "What's your first name?"  
       },
       {
+        "id":2,
         "type": "text",  
         "text": "What is your last name?"  
       },
       {
+        "id":3,
         "type": "text",  
         "text": "What is your email?"  
       },
       {
+        "id":4,
         "type": "text",  
         "text": "Which database management system (DBMS) do you currently use most frequently? (e.g., MySQL, PostgreSQL, Oracle SQL Server, MongoDB)?"  
       },
       {
+        "id":5,
         "type": "multiple-choice",  
         "text": "What is your favorite programming language?", 
         "options": [  
@@ -29,9 +34,31 @@
         ]
       },
       {
+        "id":6,
         "type": "text",  
         "text": "How frequently do you utilize APIs in your back-end development projects?"  
+      },
+      {
+        "id":7,
+        "type": "text",  
+        "text": "Beyond core languages (e.g., Python, Java), which back-end frameworks or tools do you find most valuable in your workflow, and why? "  
+      },
+      {
+        "id":8,
+        "type": "text",  
+        "text": "When faced with a complex back-end problem, how do you approach the debugging and troubleshooting process?"  
+      },
+      {
+        "id":9,
+        "type": "text",  
+        "text": "In your experience, what are the most effective strategies for designing and implementing scalable and maintainable back-end systems?"  
+      },
+      {
+        "id":10,
+        "type": "text",  
+        "text": "Security is paramount in back-end development. How do you stay informed about the latest security threats and best practices to mitigate them in your applications?"  
       }
+
     ]
   }
   
