@@ -2,22 +2,27 @@
     "title": "Frontend Questions",  
     "questions": [
       {
+        "id": 1, 
         "type": "text",  
         "text": "What's your first name?"  
       },
       {
+        "id": 2, 
         "type": "text",  
         "text": "What is your last name?"  
       },
       {
+        "id": 3, 
         "type": "text",  
         "text": "What is your email?"  
       },
       {
+        "id": 4, 
         "type": "text",  
         "text": "What is your favorite Framework?"  
       },
       {
+        "id": 5, 
         "type": "multiple-choice",  
         "text": "What is your favorite programming language?", 
         "options": [  
@@ -29,8 +34,29 @@
         ]
       },
       {
+        "id": 6, 
         "type": "text",  
         "text": "Do you primarily develop mobile first app or desktop"  
+      },
+      {
+        "id": 7, 
+        "type": "text",  
+        "text": "In your opinion, what skills or knowledge beyond technical expertise are essential for success as a front-end developer?"  
+      },
+      {
+        "id": 8, 
+        "type": "text",  
+        "text": "In your experience, what are the biggest challenges you face when working on a front-end development project?"  
+      },
+      {
+        "id": 9, 
+        "type": "text",  
+        "text": "Beyond the basics (HTML, CSS, JavaScript), which front-end frameworks or libraries do you find most valuable in your workflow and why?"  
+      },
+      {
+        "id": 10, 
+        "type": "text",  
+        "text": "How do you stay up-to-date with the ever-evolving landscape of front-end development tools and trends?"  
       }
     ]
   }
