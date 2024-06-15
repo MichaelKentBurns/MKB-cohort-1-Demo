@@ -38,7 +38,7 @@
             .container {
             text-align: center;
             background: rgb(208, 237, 204);
-            padding: 1.7rem;
+            padding: 1.5rem;
             border-radius: 8px;
             box-shadow:04px 6px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.1);
         }
@@ -48,10 +48,52 @@
         }
         p{
             font-family: Arial, Helvetica, sans-serif;
-        }
+        } 
+        * {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #306739;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 15px;
+    box-shadow: 2px 2px 10px rgba(46, 139, 7, 0.1);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
     </style>
   </head>
   <body>
+    <nav class="navbar">
+        <div class="logo">MKB-cohort-1</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="MKB">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
     <div class="container">
         <h1>Welcome to the Demo</h1>
         <p>This is a brief introduction to the demo. Click the button below to start the demo.</p>
