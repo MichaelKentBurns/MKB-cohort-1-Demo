@@ -65,7 +65,7 @@
 }
 
 .logo {
-    color: #fff;
+    color: #ffffffa2;
     font-size: 24px;
     font-weight: bold;
     padding-right: 15px;
@@ -95,8 +95,8 @@
 .MKB span {
     height: 3px;
     width: 25px;
-    background-color: #fff;
-    margin: 4px 0;
+    background-color: #ffffffa2;
+    margin: 2px 0;
     border-radius: 5px;
 }
 /* Responsive Styles */
@@ -123,6 +123,11 @@
         display: flex;
     }
 }
+/* Toggle nav-links display */
+.nav-links.active {
+    display: flex;
+}
+
     </style>
   </head>
   <body>
@@ -155,5 +160,14 @@
                 </footer>
             </div>
     </div>
+    <script>
+        const MKB = document.querySelector('.MKB');
+        const navLinks = document.querySelector('.nav-links');
+    
+        MKB.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
   </body>
 </html>
