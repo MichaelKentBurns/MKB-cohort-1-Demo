@@ -108,11 +108,12 @@
         position: absolute;
         top: 44px;
         left: 0;
-        background-color: #0f4205;
+        background-color:#306739;
     }
     .nav-links li {
         text-align: center;
         margin: 5px 0;
+        background-color: #03805e;
     }
 
     .nav-links a {
@@ -122,6 +123,21 @@
     .MKB {
         display: flex;
     }
+    .nav-links.active{
+    transition: opacity 2.15s linear;    
+    width:200px;
+    height:500px;
+    border-radius: 10px 10px 10px 10px;
+    top:50px;
+    opacity:0.4;
+    filter: blur(1px);
+
+}
+.nav-links:hover{
+    opacity:1;
+    filter: blur(0px)
+}
+
 }
 /* Toggle nav-links display */
 .nav-links.active {
