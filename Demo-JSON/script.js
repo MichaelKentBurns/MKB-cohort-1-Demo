@@ -23,11 +23,11 @@ function displaySurvey(data) {
 
   const answers = {}; // Object to store user answers
 
-    //create button
-    const button = document.createElement("button");
-    button.type = "submit";
-    button.textContent = "Submission"; // Set button text
-  
+  //create button
+  const button = document.createElement("button");
+  button.type = "submit";
+  button.textContent = "Submission"; // Set button text
+
 
   data.questions.forEach((question) => {
     // Create a label element
@@ -42,29 +42,29 @@ function displaySurvey(data) {
     questionInput.setAttribute("id", "question");
     questionInput.required = true; // Set the input as required
 
-    questionInput.addEventListener('change',(event)=>{
-      answers[question.text]=event.target.value;
+    questionInput.addEventListener('change', (event) => {
+      answers[question.text] = event.target.value;
     });
- 
+
 
     // Append the label and input to the div
     questionsList.appendChild(questionLabel);
     questionsList.appendChild(questionInput);
 
 
-    
+
   });
 
-  
-  questionContainerElement.addEventListener('submit',(event)=>{
+
+  questionContainerElement.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent default form submission behavior
     const surveyData = {
       title: data.title,
       answers: answers // Add the collected answers object
     };
 
- 
-   saveSurveyResults(surveyData); // Call the function to save data
+
+    saveSurveyResults(surveyData); // Call the function to save data
 
   })
 
@@ -77,10 +77,10 @@ function displaySurvey(data) {
 //function to save results
 function saveSurveyResults(data) {
   const firstName = data.answers ? data.answers["What's your first name?"] : ""; // Handle potential missing answer
-  const filename = `${firstName ? firstName+" responses "+data.title : 'unknown'}-${Date.now()}.json`; // Use firstName if available, fallback to 'unknown'
+  const filename = `${firstName ? firstName + " responses " + data.title : 'unknown'}-${Date.now()}.json`; // Use firstName if available, fallback to 'unknown'
   const jsonData = JSON.stringify(data, null, 2); // Stringify data with indentation
 
- 
+
 
   // Create a pre element to display formatted JSON
   const jsonDisplay = document.createElement('pre');
@@ -104,8 +104,8 @@ function saveSurveyResults(data) {
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
 
     //send survey results
-
-    fetch('http://localhost:1234/Demo-backend', {
+    const localDomain = window.location.origin;
+    fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/index.php`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -131,10 +131,10 @@ function saveSurveyResults(data) {
         alert('Error saving survey results: ' + error.message);
       });
 
-    
+
   });
 
- 
+
 }
 // Function to populate the survey list based on available files
 function populateSurveyList() {
