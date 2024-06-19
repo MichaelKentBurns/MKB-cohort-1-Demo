@@ -11,7 +11,6 @@ function loadSurveyData(fileName) {
     .catch((error) => console.error("Error loading survey:", error));
 }
 
-// Function to display the survey questions
 function displaySurvey(data) {
   questionContainerElement.innerHTML = ""; // Clear existing content
 
@@ -20,59 +19,63 @@ function displaySurvey(data) {
   questionContainerElement.appendChild(title);
 
   const questionsList = document.createElement("div");
-
   const answers = {}; // Object to store user answers
 
-    //create button
-    const button = document.createElement("button");
-    button.type = "submit";
-    button.textContent = "Submission"; // Set button text
-  
+  // Create button
+  const button = document.createElement("button");
+  button.type = "submit";
+  button.textContent = "Submission"; // Set button text
 
   data.questions.forEach((question) => {
-    // Create a label element
     const questionLabel = document.createElement("label");
-    questionLabel.setAttribute("for", "username"); // Set the 'for' attribute
-    questionLabel.innerHTML = question.text; // Set the label content with bold text
+    questionLabel.setAttribute("for", `${question.id || question.text}`); // Use ID or text as label 'for' attribute
+    questionLabel.innerHTML = question.text; // Set the label content
 
-    // Create an input element
-    const questionInput = document.createElement("input");
-    questionInput.setAttribute("type", "text");
-    questionInput.setAttribute("question", "question");
-    questionInput.setAttribute("id", "question");
-    questionInput.required = true; // Set the input as required
+    let answerElement;
 
-    questionInput.addEventListener('change',(event)=>{
-      answers[question.text]=event.target.value;
+    if (question.type === "text") {
+      answerElement = document.createElement("input");
+      answerElement.setAttribute("type", "text");
+      answerElement.required = question.required || false; // Set required based on question property
+    } else if (question.type === "multiple-choice") {
+      answerElement = document.createElement("select");
+      question.options.forEach((option) => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.textContent = option;
+        answerElement.appendChild(optionElement);
+      });
+    } else {
+      console.warn(`Unsupported question type: ${question.type}`);
+      // Handle unsupported question types (optional)
+    }
+
+    answerElement.setAttribute("id", `${question.id || question.text}`); // Use ID or text as element ID
+    answerElement.setAttribute("question", question.text);
+
+    answerElement.addEventListener("change", (event) => {
+      answers[question.text] = event.target.value;
     });
- 
 
-    // Append the label and input to the div
-    questionsList.appendChild(questionLabel);
-    questionsList.appendChild(questionInput);
-
-
-    
+    questionContainerElement.appendChild(questionLabel);
+    questionContainerElement.appendChild(answerElement);
   });
 
-  
-  questionContainerElement.addEventListener('submit',(event)=>{
+  questionContainerElement.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent default form submission behavior
     const surveyData = {
       title: data.title,
-      answers: answers // Add the collected answers object
+      answers: answers,
     };
 
- 
-   saveSurveyResults(surveyData); // Call the function to save data
-
-  })
+    saveSurveyResults(surveyData); // Call the function to save data
+  });
 
   questionContainerElement.appendChild(questionsList);
   questionContainerElement.append(button);
-
   questionContainerElement.style.display = "block";
 }
+
 
 //function to save results
 function saveSurveyResults(data) {
