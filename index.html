@@ -103,6 +103,9 @@
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .navbar {
+            padding: 10px; /* Adjust padding */
+        }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -116,6 +119,8 @@
         text-align: center;
         margin: 5px 0;
         background-color: #03805e;
+        margin-left: 0; /* Remove left margin for nav items */
+            margin-top: 5px; /* Add top margin for better spacing */
     }
 
     .nav-links a {
@@ -148,14 +153,6 @@
     opacity:1;
     filter: blur(0px)
 }
-.container {
-        text-align: center;
-        background: rgb(208, 237, 204);
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
-        max-width: 800px; /* Limit container width for larger screens */
-        width: 90%;}
 
 }
 
