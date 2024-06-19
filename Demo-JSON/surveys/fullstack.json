@@ -18,45 +18,62 @@
       },
       {
         "id":4,
-        "type": "text",  
-        "text": "Do you primarily develop back-end applications for deployment on cloud platforms or on-premise servers?"  
-      },
-      {
-        "id":5,
         "type": "multiple-choice",  
-        "text": "What is your favorite programming language?", 
+        "text": "Which version control system (VCS) do you primarily use for your full-stack development projects?", 
         "options": [  
-          "JavaScript",
-          "Python",
-          "Java",
-          "C++",
+          "Git",
+          "Subversion(SVN)",
+          "Mercurial",
           "Other"
         ]
       },
       {
+        "id":5,
+        "type": "multiple-choice",  
+        "text": "How often do you utilize unit testing within your full-stack development workflow?", 
+        "options": [  
+          "Always",
+          "Frequently",
+          "Occasionally",
+          "Rarely"
+        ]
+      },
+      {
         "id":6,
-        "type": "text",  
-        "text": "Have you encountered any challenges in integrating with third-party APIs in the past? If so, what were they?"  
+        "type": "multiple-choice",  
+        "text": "What is your preferred approach for handling data persistence in your full-stack projects?", 
+        "options": [  
+          "Relational databases (e.g., MySQL, PostgreSQL)",
+          "NoSQL databases (e.g., MongoDB, CouchDB)",
+          "File-based storage",
+          "Other"
+        ]
       },
       {
         "id":7,
-        "type": "text",  
-        "text": "The world of web development is constantly evolving. How do you stay up-to-date on the latest trends and technologies impacting both front-end and back-end development?"  
+        "type": "multiple-choice",  
+        "text": "Which of the following best describes your experience level with both front-end and back-end development?", 
+        "options": [  
+          "Strong experience in both front-end and back-end development",
+          "More experience in front-end development, with some back-end knowledge",
+          "More experience in back-end development, with some front-end knowledge",
+          "Primarily focused on front-end or back-end development"
+        ]
       },
       {
         "id":8,
         "type": "text",  
-        "text": "Many full-stack developers choose to specialize in a particular area (e.g., front-end heavy, back-end heavy). Do you have a preference, and if so, how do you stay proficient in the other area to maintain your full-stack skillset?"  
+        "text": "In your full-stack development experience, how do you balance and prioritize tasks between front-end and back-end development during a project? "  
       },
       {
         "id":9,
         "type": "text",  
-        "text": "Beyond technical skills, what soft skills do you consider most important for success as a full-stack developer? Why?"  
+        "text": "What are the biggest challenges you face when working on a full-stack project, and how do you overcome them?"  
       },
       {
         "id":10,
         "type": "text",  
-        "text": "Communication and collaboration are key in full-stack development. Describe a situation where your ability to bridge the gap between front-end and back-end teams proved beneficial to a project. "  
+        "text": "When learning new technologies, do you find it more beneficial to learn front-end and back-end aspects simultaneously or focus on one at a time? Why?"  
       }
     ]
   }
