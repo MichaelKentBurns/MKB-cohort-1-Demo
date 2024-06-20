@@ -4,59 +4,82 @@
       {
         "id": 1, 
         "type": "text",  
-        "text": "What's your first name?"  
+        "text": "What's your first name?",
+        "required":true
       },
       {
         "id": 2, 
         "type": "text",  
-        "text": "What is your last name?"  
+        "text": "What is your last name?",
+        "required":true
       },
       {
         "id": 3, 
         "type": "text",  
-        "text": "What is your email?"  
+        "text": "What is your email?",
+        "required":true 
       },
       {
         "id": 4, 
-        "type": "text",  
-        "text": "What is your favorite Framework?"  
-      },
-      {
-        "id": 5, 
         "type": "multiple-choice",  
-        "text": "What is your favorite programming language?", 
+        "text": "Which front-end framework or library do you use most frequently in your projects?", 
         "options": [  
-          "JavaScript",
-          "Python",
-          "Java",
-          "C++",
+          "React",
+          "Angular",
+          "Vue.js",
           "Other"
         ]
       },
       {
+        "id": 5, 
+        "type": "multiple-choice",  
+        "text": "How important do you consider user experience (UX) design principles when developing the front-end of a web application?", 
+        "options": [  
+          "Not very important, functionality takes priority.",
+          "Somewhat important, but I primarily focus on code quality.",
+          "Very important, I strive to create a seamless and intuitive user experience.",
+          "Essential, UX design is an integral part of the front-end development process."
+        ]
+      },
+      {
         "id": 6, 
-        "type": "text",  
-        "text": "Do you primarily develop mobile first app or desktop"  
+        "type": "multiple-choice",  
+        "text": "Which of the following best describes your approach to writing clean and maintainable front-end code?", 
+        "options": [  
+          "I prioritize functionality and get the job done quickly.",
+          "I follow basic coding conventions for readability.",
+          "I utilize modular code structure and best practices for maintainability.",
+          "I write highly-commented and well-documented code for future reference."
+        ]
       },
       {
         "id": 7, 
-        "type": "text",  
-        "text": "In your opinion, what skills or knowledge beyond technical expertise are essential for success as a front-end developer?"  
+        "type": "multiple-choice",  
+        "text": "How often do you stay up-to-date with the latest trends and advancements in front-end development tools and technologies?", 
+        "options": [  
+          "Rarely, I focus on the tools I already know well.",
+          "Occasionally, when I encounter a specific project requirement.",
+          "Regularly, I follow industry publications and attend workshops.",
+          "Constantly, I actively seek out new learning opportunities and experiment with emerging technologies."
+        ]
       },
       {
         "id": 8, 
-        "type": "text",  
-        "text": "In your experience, what are the biggest challenges you face when working on a front-end development project?"  
+        "type": "text-area",  
+        "text": "Beyond the core languages (HTML, CSS, JavaScript), describe a development workflow or approach that you find particularly efficient or effective. Why does it work well for you?",
+        "required":true  
       },
       {
         "id": 9, 
-        "type": "text",  
-        "text": "Beyond the basics (HTML, CSS, JavaScript), which front-end frameworks or libraries do you find most valuable in your workflow and why?"  
+        "type": "text-area",  
+        "text": "In your experience, what are the biggest challenges in creating a truly responsive web experience that caters to various devices and screen sizes? ",
+        "required":true 
       },
       {
         "id": 10, 
-        "type": "text",  
-        "text": "How do you stay up-to-date with the ever-evolving landscape of front-end development tools and trends?"  
+        "type": "text-area",  
+        "text": "The concept of progressive enhancement is a core principle in front-end development. How do you balance building a functional baseline experience with incorporating advanced features for users with better browsing capabilities?",
+        "required":true  
       }
     ]
   }
