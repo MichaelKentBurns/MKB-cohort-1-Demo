@@ -1,0 +1,404 @@
+{
+  "id": "1e5e52cf-b7aa-4b2c-9f02-f11c83e41b16",
+  "version": "2.0",
+  "name": "test-demo.MKB.com-Survey-Demo",
+  "url": "http://demo.michaelkentburns.com",
+  "tests": [{
+    "id": "c764ef19-1d34-4e77-a39e-d0371349f034",
+    "name": "Start at the demo.MKB.com dashboard and complete the front end survey with some wandering.",
+    "commands": [{
+      "id": "73455a3b-189f-4727-b698-f536693f5a80",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0e7dcae-6547-424f-99bf-3a7051e25c84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1140x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcf991e9-8da4-4dc5-9524-de411281d24e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(6) b",
+      "targets": [
+        ["css=.item:nth-child(6) b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Cohort-1 demo space')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a506382f-d8c8-435a-9cdc-5307cc10d4e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://michaelkentburns.com/index.php/about-michael/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "743aa0b1-b1e5-4bd7-b0ef-d8fb77e5f8a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Demo-survey/Demo-survey-1.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22bf29a5-2f9e-4415-961c-4e8095fc4a70",
+      "comment": "",
+      "command": "click",
+      "target": "id=first-name",
+      "targets": [
+        ["id=first-name", "id"],
+        ["name=first-name", "name"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "855c7417-8a8a-42e6-8893-961d67e8665b",
+      "comment": "",
+      "command": "type",
+      "target": "id=first-name",
+      "targets": [
+        ["id=first-name", "id"],
+        ["name=first-name", "name"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "8b3635ca-9b04-4c0c-a25a-e5b9517dfe9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=last-name",
+      "targets": [
+        ["id=last-name", "id"],
+        ["name=last-name", "name"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Burns"
+    }, {
+      "id": "23a6b355-667a-4d2e-97d5-ed55068bb0e6",
+      "comment": "",
+      "command": "select",
+      "target": "id=sex",
+      "targets": [],
+      "value": "label=Male"
+    }, {
+      "id": "d55f9a48-677a-4caa-bcac-021f3d652a57",
+      "comment": "",
+      "command": "type",
+      "target": "id=comments",
+      "targets": [
+        ["id=comments", "id"],
+        ["name=comments", "name"],
+        ["css=#comments", "css:finder"],
+        ["xpath=//textarea[@id='comments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Trying out Selenium to capture a test run."
+    }, {
+      "id": "fe4ed877-64e9-4eb6-b060-5504e27f93cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Survey')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef14aeef-1d83-42b0-8b84-0407c6ab6794",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit the Demo-json",
+      "targets": [
+        ["linkText=Visit the Demo-json", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit the Demo-json')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Demo-JSON/jsonJavascipt.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit the Demo-json')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33b887b7-183d-4f78-9262-402b4766a205",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Instructions here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3631e76-7052-46d1-9465-d3dd9e2c0091",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Welcome to MKB-cohort-1-Demo . In this part you are going to follow these steps:\n1. If you have already cloned the MKB-cohort-1-Demo, Open VS code \n2. Go to the extension and search for the live server\n3. Install the extention\n4. Then go to the Demo-JSON in your local and open it with VS code\n5. Go to the jsonjavascript.html inside VS code\n6. Right click inside the file\n7. Click open with live server and everything will be displayed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db3186fb-2446-463b-95d1-3240b8905356",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='survey-list']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'frontend.json')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f69d447-6677-424a-ac3b-4876734a8b4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Instructions here')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51710d9e-1673-4f59-9917-b1fa21472d43",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Welcome to MKB-cohort-1-Demo . In this part you are going to follow these steps:\n1. If you have already cloned the MKB-cohort-1-Demo, Open VS code \n2. Go to the extension and search for the live server\n3. Install the extention\n4. Then go to the Demo-JSON in your local and open it with VS code\n5. Go to the jsonjavascript.html inside VS code\n6. Right click inside the file\n7. Click open with live server and everything will be displayed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43f73640-26f0-4fc9-a1d0-2d95299133fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=question",
+      "targets": [
+        ["id=question", "id"],
+        ["xpath=//input[@id='question']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fd9ece7-14dd-42a4-a651-d58ec7d2a4ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=question",
+      "targets": [
+        ["id=question", "id"],
+        ["xpath=//input[@id='question']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "ed632de5-d32d-46c8-b4f8-e812e9a197a5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Burns"
+    }, {
+      "id": "b0910dba-d0e0-4dd0-8797-d444f35864c4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[3]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "MichaelKentBurns@gmail.com"
+    }, {
+      "id": "f758ec65-bd49-4469-9aa2-97136a500df0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[4]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "WordPress"
+    }, {
+      "id": "541f861f-2272-4112-81c0-ab1e8c1b1520",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[5]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[5]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Smalltalk and Swift and C"
+    }, {
+      "id": "9f91f613-1189-47b7-a4a9-4369ad1c2c95",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[6]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "desktop"
+    }, {
+      "id": "fdd14fb2-02c6-4a3e-b722-837d4aa6b8a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5a56d28-1750-443e-bd5b-6d0113f11748",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//input[@id='question'])[7]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bacb692b-eb13-49e6-9a10-7177eacfef27",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[7]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "ability to work in a team using GitHub"
+    }, {
+      "id": "c2460d9e-8fe0-4d3d-b6ee-3d56f9f4784d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[8]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[8]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "lack of knowledge of CSS and HTML5"
+    }, {
+      "id": "94977945-8372-459e-839a-93b914745251",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[9]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[9]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "no opinion"
+    }, {
+      "id": "600dd8c6-4879-4cc6-86ab-834c1bf837de",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[10]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[10]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[10]", "xpath:idRelative"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": "read a lot"
+    }, {
+      "id": "3917f76f-7254-4b7a-bb19-c9b939cc20b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a61983e3-a4a8-46cb-aaf9-011f0aa3a26d",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "988ebc5d-2f0f-495e-b22b-05670d897aa6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//body/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Survey Results (JSON)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5865b324-f518-48ca-b4d5-f8865bd913af",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Survey results saved successfully!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffac12be-74e8-4c09-9c6c-86cc5ca14985",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cb07c617-67ff-4da0-9028-3afb5745aed6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c764ef19-1d34-4e77-a39e-d0371349f034"]
+  }],
+  "urls": ["http://demo.michaelkentburns.com/"],
+  "plugins": []
+}
