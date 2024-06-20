@@ -4,17 +4,20 @@
       {
         "id":1,
         "type": "text",  
-        "text": "What's your first name?"  
+        "text": "What's your first name?",
+        "required":true   
       },
       {
         "id":2,
         "type": "text",  
-        "text": "What is your last name?"  
+        "text": "What is your last name?",
+        "required":true     
       },
       {
         "id":3,
         "type": "text",  
-        "text": "What is your email?"  
+        "text": "What is your email?",
+        "required":true     
       },
       {
         "id":4,
@@ -62,18 +65,21 @@
       },
       {
         "id":8,
-        "type": "text",  
-        "text": "In your full-stack development experience, how do you balance and prioritize tasks between front-end and back-end development during a project? "  
+        "type": "text-area",  
+        "text": "In your full-stack development experience, how do you balance and prioritize tasks between front-end and back-end development during a project? ",
+        "required":true    
       },
       {
         "id":9,
-        "type": "text",  
-        "text": "What are the biggest challenges you face when working on a full-stack project, and how do you overcome them?"  
+        "type": "text-area", 
+        "text": "What are the biggest challenges you face when working on a full-stack project, and how do you overcome them?",
+        "required":true     
       },
       {
         "id":10,
-        "type": "text",  
-        "text": "When learning new technologies, do you find it more beneficial to learn front-end and back-end aspects simultaneously or focus on one at a time? Why?"  
+        "type": "text-area",  
+        "text": "When learning new technologies, do you find it more beneficial to learn front-end and back-end aspects simultaneously or focus on one at a time? Why?",
+        "required":true     
       }
     ]
   }
