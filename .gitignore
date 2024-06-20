@@ -1,1 +1,4 @@
+.gitignore
+.vscode/launch.json
 Demo-backend/survey.db
+responses/

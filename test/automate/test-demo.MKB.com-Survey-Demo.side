@@ -390,6 +390,232 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "d9a936f6-8ad3-48dd-8515-bd09ba17d2f3",
+    "name": "Start at the demo.MKB.com dashboard and complete the front end survey with NO wandering.",
+    "commands": [{
+      "id": "88224690-95d2-4012-8681-ecb23810fec1",
+      "comment": "",
+      "command": "open",
+      "target": "/dashboard/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f657b9d9-d3b4-43b8-bb1c-17285eca337c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1140x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33f7a329-c623-4805-8fdf-a36e2c7cb998",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(6) b",
+      "targets": [
+        ["css=.item:nth-child(6) b", "css:finder"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Cohort-1 demo space')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1480c2b-9f1d-405f-824e-5296b1bebff1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visit the Demo-json",
+      "targets": [
+        ["linkText=Visit the Demo-json", "linkText"],
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Visit the Demo-json')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Demo-JSON/jsonJavascipt.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Visit the Demo-json')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef2fae2-9033-4278-9d5f-18f985f79d96",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1)",
+      "targets": [
+        ["css=li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='survey-list']/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'frontend.json')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "baf6868f-28f7-44f4-8459-f399030c8068",
+      "comment": "",
+      "command": "click",
+      "target": "id=question",
+      "targets": [
+        ["id=question", "id"],
+        ["xpath=//input[@id='question']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e2bf9e6-6d36-43cd-8c8b-585403db31ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=question",
+      "targets": [
+        ["id=question", "id"],
+        ["xpath=//input[@id='question']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "e895b282-e5b2-4742-9832-6bff365ed8de",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[2]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Burns"
+    }, {
+      "id": "69f77b50-809d-417b-8b18-bdf762920358",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[3]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "MichaelKentBurns@gmail.com"
+    }, {
+      "id": "b3b2f7ec-78c0-45ab-be3b-d114ecbf4000",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[4]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "WordPress"
+    }, {
+      "id": "177eb9d9-1dfa-4390-a1ef-406ab4146074",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[5]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[5]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Swift and perhaps Smalltalk"
+    }, {
+      "id": "9a99e3fb-81de-4b61-8b37-0afec89136be",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[6]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "desktop"
+    }, {
+      "id": "5dc647ad-e2de-465c-bc84-fe59a3d0f6f8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[7]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "experience working as a team using GitHub and it's issues list."
+    }, {
+      "id": "98d60604-3f30-4c16-9b74-2d56a2a06d79",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[8]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[8]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[8]", "xpath:idRelative"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "I'm not that experienced in CSS, HTML5, or JavaScript"
+    }, {
+      "id": "6b16dd74-587a-4e44-9ffc-3cb182b290eb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[9]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[9]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "no answer"
+    }, {
+      "id": "d37e59bb-1740-44f2-bced-6bb02e500bc9",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@id='question'])[10]",
+      "targets": [
+        ["xpath=(//input[@id='question'])[10]", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/div/input[10]", "xpath:idRelative"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": "lots of reading and trial and error."
+    }, {
+      "id": "135344a1-bcc8-4bb7-b601-5c7f7ad26eae",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='question-container']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15f76a62-e0f1-476f-a089-09fec793254a",
+      "comment": "",
+      "command": "click",
+      "target": "css=pre:nth-child(3)",
+      "targets": [
+        ["css=pre:nth-child(3)", "css:finder"],
+        ["xpath=//body/pre", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9325f8b2-64d5-40f4-8055-d4e1915aee4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//body/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Survey Results (JSON)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "982f2606-9440-4264-959d-3fd1cf3aa585",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Survey results saved successfully!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1061c638-de68-486d-8ebb-9b25e7ce36bf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "cb07c617-67ff-4da0-9028-3afb5745aed6",
