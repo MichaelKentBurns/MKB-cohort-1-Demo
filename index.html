@@ -103,6 +103,21 @@
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #306739;
+        padding: 10px 20px;
+        border-radius: 10px 10px 5px 5px;
+        max-width: 100%; /* Ensure navbar spans full width */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -164,6 +179,9 @@
         max-width: 800px; /* Limit container width for larger screens */
         width: 100%; /* Responsive width */
     }
+}
+@media (max-width: 600px) {
+    /* Mobile styles */
 }
 
 @media screen and (max-width: 625px){
