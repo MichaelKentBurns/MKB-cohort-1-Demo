@@ -4,59 +4,86 @@
       {
         "id":1,
         "type": "text",  
-        "text": "What's your first name?"  
+        "text": "What's your first name?",
+        "required":true  
       },
       {
         "id":2,
         "type": "text",  
-        "text": "What is your last name?"  
+        "text": "What is your last name?",
+        "required":true   
       },
       {
         "id":3,
         "type": "text",  
-        "text": "What is your email?"  
+        "text": "What is your email?",
+        "required":true  
       },
       {
         "id":4,
-        "type": "text",  
-        "text": "Which database management system (DBMS) do you currently use most frequently? (e.g., MySQL, PostgreSQL, Oracle SQL Server, MongoDB)?"  
-      },
-      {
-        "id":5,
         "type": "multiple-choice",  
-        "text": "What is your favorite programming language?", 
+        "text": "Which of the following best describes your primary back-end development language?", 
         "options": [  
-          "JavaScript",
           "Python",
           "Java",
-          "C++",
+          "JavaScript(Node.js)",
+          "PHP",
           "Other"
         ]
       },
       {
+        "id":5,
+        "type": "multiple-choice",  
+        "text": "How often do you use containerization technologies (e.g., Docker) in your back-end development projects?", 
+        "options": [  
+          "Always",
+          "Frequently",
+          "Occasionally",
+          "Rarely",
+          "Never"
+        ]
+      },
+      {
         "id":6,
-        "type": "text",  
-        "text": "How frequently do you utilize APIs in your back-end development projects?"  
+        "type": "multiple-choice",  
+        "text": "Which of the following aspects of back-end development do you find most challenging?", 
+        "options": [  
+          "Performance optimization",
+          "Security implementation",
+          "Database design and optimization",
+          "API design and documentation",
+          "All of the above"
+        ]
       },
       {
         "id":7,
-        "type": "text",  
-        "text": "Beyond core languages (e.g., Python, Java), which back-end frameworks or tools do you find most valuable in your workflow, and why? "  
+        "type": "multiple-choice",  
+        "text": "How important do you consider a strong understanding of cloud platforms (e.g., AWS, Azure) to be for back-end developers today?", 
+        "options": [  
+          "Not important at all",
+          "Somewhat important",
+          "Important",
+          "Very important",
+          "Essential"
+        ]
       },
       {
         "id":8,
-        "type": "text",  
-        "text": "When faced with a complex back-end problem, how do you approach the debugging and troubleshooting process?"  
+        "type": "text-area",  
+        "text": "Beyond core languages (e.g., Python, Java), which back-end frameworks or tools do you find most valuable in your workflow, and why?",
+        "required":true   
       },
       {
         "id":9,
-        "type": "text",  
-        "text": "In your experience, what are the most effective strategies for designing and implementing scalable and maintainable back-end systems?"  
+        "type": "text-area",  
+        "text": "Describe a recent back-end development project you're particularly proud of. What specific technical challenges did you overcome, and what did you learn from the experience?",
+        "required":true    
       },
       {
         "id":10,
-        "type": "text",  
-        "text": "Security is paramount in back-end development. How do you stay informed about the latest security threats and best practices to mitigate them in your applications?"  
+        "type": "text-area",  
+        "text": "When designing a complex back-end system, how do you balance performance, scalability, and maintainability? Can you share an example of a specific approach you've taken?",
+        "required":true    
       }
 
     ]
