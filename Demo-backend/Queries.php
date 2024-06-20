@@ -13,7 +13,7 @@ class Queries
 
     public function insertSurvey($title)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Surveys (title) VALUES (:title)");
+        $stmt = $this->conn->prepare("INSERT INTO Surveys (title) SELECT :title WHERE NOT EXISTS (SELECT * FROM Surveys WHERE title = :title)");
         $stmt->bindParam(':title', $title);
         $stmt->execute();
         return $this->conn->lastInsertId();
