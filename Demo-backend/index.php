@@ -19,8 +19,6 @@ try {
         throw new Exception("Invalid JSON input");
     }
 
-    // $data = json_decode($json_data, true);
-
     // Database connection parameters
     $dbname = 'survey.db';
 
