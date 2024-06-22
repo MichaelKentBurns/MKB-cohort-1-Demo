@@ -1,6 +1,9 @@
 const surveyListElement = document.getElementById("survey-list");
 const questionContainerElement = document.getElementById("question-container");
 
+// Global variable to get local domain
+const localDomain = window.location.origin;
+
 // Function to load survey data from a file
 function loadSurveyData(fileName) {
   fetch(`surveys/${fileName}`)
@@ -115,12 +118,8 @@ function saveSurveyResults(data) {
     downloadLink.click();
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
 
-    //send survey results
-	 
-   const localDomain = window.location.origin;
- fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/`, {
 
-  //  fetch('http://localhost:1234/Demo-backend', {
+  fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -145,8 +144,6 @@ function saveSurveyResults(data) {
         console.error('Error:', error);
         alert('Error saving survey results: ' + error.message);
       });
-
-    
   });
 
  
@@ -156,7 +153,7 @@ function populateSurveyList() {
   const surveyListElement = document.getElementById("survey-list");
   surveyListElement.innerHTML = ""; // Clear existing content
 
-  fetch('http://localhost/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php') // Replace with your server endpoint
+  fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php`) // Replace with your server endpoint
     .then(response => response.json())
     .then(data => {
       const list = document.createElement("ul");
@@ -173,7 +170,5 @@ function populateSurveyList() {
       alert('Error retrieving survey list from server.');
     });
 }
-
-
 populateSurveyList(); // Call the function to populate the list on load
 
