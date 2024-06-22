@@ -116,9 +116,9 @@ function saveSurveyResults(data) {
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
 
     //send survey results
-	 //send survey results
- const localDomain = window.location.origin;
- fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/index.php`, {
+	 
+   const localDomain = window.location.origin;
+ fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/`, {
 
   //  fetch('http://localhost:1234/Demo-backend', {
       method: 'POST',
