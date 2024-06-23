@@ -17,9 +17,27 @@
         .section {
             margin-bottom: 40px;
         }
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <h2>MKB-cohort-1</h2>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">about</a>
+        <a href="#contact">Contact</a>
+    </div>
   <div class="content">
     <h1>Prospective Upwork Client Tour</h1>
     <div class="section">
@@ -36,7 +54,7 @@
         <p>Our team possesses these skills and we are excited to demonstrate them through this demo site.</p>
     </div>
     <div class="section">
-        <h2>About This Demo Site</h2>
+        <h2 id="about">About This Demo Site</h2>
         <p>We developed this demo site to showcase our technical skills and collaborative efforts. It serves as a practical demonstration of our abilities in web development, from frontend interfaces to backend processing and data management.</p>
     </div>
     <div class="section">
