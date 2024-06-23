@@ -6,6 +6,8 @@ class Queries
 {
     private $conn;
 
+    private $lastmvmt;
+
     public function __construct($databaseConnection)
     {
         $this->conn = $databaseConnection->getConnection();
@@ -16,7 +18,15 @@ class Queries
         $stmt = $this->conn->prepare("INSERT INTO Surveys (title) SELECT :title WHERE NOT EXISTS (SELECT * FROM Surveys WHERE title = :title)");
         $stmt->bindParam(':title', $title);
         $stmt->execute();
-        return $this->conn->lastInsertId();
+
+        if($this->conn->lastInsertId() == 0)
+        {
+            return $this->conn->query("SELECT id FROM Surveys WHERE title = '$title'")->fetchColumn();
+        }
+        else
+        {
+            return $this->conn->lastInsertId();
+        }
     }
 
     public function insertQuestion($survey_id, $question_text)
