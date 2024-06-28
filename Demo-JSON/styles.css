@@ -16,12 +16,12 @@ pre{
   white-space: pre-wrap;
   word-wrap: break-word;
   padding-right:2px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #a1c3a2;
     border:1px solid #ddd;
     border-radius: 5px 3px 3px 5px ;
-    max-height: 300vh;
-    overflow: hidden;
+    /* max-height: 300vh;
+    overflow: hidden; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #survey-list {
@@ -108,12 +108,22 @@ img.avatar {
 textarea{
     width:100%;
     display: flex;
+    margin:5px 0 5px 0;
 }
 select{
     display:flex;
-    margin-top: 10px;
-    height:22px;
-    border-radius:5px 4px 5px 4px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin:5px 0 5px 0;
+  }
+  option {
+    padding: 5px 10px;
+  }
+  option:hover {
+    background-color: red; /* Light gray background on hover */
   }
   .developer{
     box-shadow:2px 2px 2px 2px ;
