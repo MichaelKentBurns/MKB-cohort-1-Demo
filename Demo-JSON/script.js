@@ -135,7 +135,8 @@ function saveSurveyResults(data) {
       .then(result => {
         console.log('Success:', result);
         if (result.status === 'success') {
-          alert('Survey results saved successfully!');
+         alert('Survey results saved successfully!');
+          //window.location.href = 'http://localhost/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-JSON/display.html';
         } else {
           alert('Error: ' + result.message);
         }
@@ -152,8 +153,11 @@ function saveSurveyResults(data) {
 function populateSurveyList() {
   const surveyListElement = document.getElementById("survey-list");
   surveyListElement.innerHTML = ""; // Clear existing content
+  const getFilesURL = "../Demo-backend/GetFiles.php";
+
 
   fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php`) // Replace with your server endpoint
+  //fetch(getFilesURL)
     .then(response => response.json())
     .then(data => {
       const list = document.createElement("ul");
@@ -171,4 +175,10 @@ function populateSurveyList() {
     });
 }
 populateSurveyList(); // Call the function to populate the list on load
+
+
+
+
+
+
 
