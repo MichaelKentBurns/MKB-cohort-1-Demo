@@ -19,12 +19,9 @@ class Queries
         $stmt->bindParam(':title', $title);
         $stmt->execute();
 
-        if($this->conn->lastInsertId() == 0)
-        {
+        if ($this->conn->lastInsertId() == 0) {
             return $this->conn->query("SELECT id FROM Surveys WHERE title = '$title'")->fetchColumn();
-        }
-        else
-        {
+        } else {
             return $this->conn->lastInsertId();
         }
     }
@@ -51,15 +48,27 @@ class Queries
     {
         $query = "
         SELECT 
-            Surveys.id as survey_id, Surveys.title, 
-            Questions.id as question_id, Questions.question_text, 
-            Answers.answer_text 
-        FROM Surveys
-        LEFT JOIN Questions ON Surveys.id = Questions.survey_id
-        LEFT JOIN Answers ON Questions.id = Answers.question_id
-        ORDER BY Surveys.id, Questions.id";
+            Surveys.id as survey_id, Surveys.title
+        FROM Surveys";
 
         $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getQuestions($survey_id)
+    {
+        $stmt = $this->conn->prepare("SELECT id as question_id, question_text FROM Questions WHERE survey_id = :survey_id");
+        $stmt->bindParam(':survey_id', $survey_id);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getAnswers($survey_id, $question_id)
+    {
+        $stmt = $this->conn->prepare("SELECT answer_text FROM Answers WHERE survey_id = :survey_id AND question_id = :question_id");
+        $stmt->bindParam(':survey_id', $survey_id);
+        $stmt->bindParam(':question_id', $question_id);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
