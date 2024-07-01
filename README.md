@@ -42,5 +42,33 @@ Manages the process of transforming user input from the form into the designated
 Develops the back-end code responsible for processing the generated JSON files. This may involve functions to insert or update data records within a MySQL database (if applicable).
 Oversees the deployment of the final application onto the designated demo platform (demo.MichaelKentBurns.com), enabling public access and future student use.
 
+## Getting Started
 
+### Prerequisites
+- Git
+-SQL
 
+### Installation
+1. Clone the repository
+    ```bash
+    git clone https://github.com/michaelkentburns/mkb-cohort-1-demo.git
+    ```
+2. Install dependencies
+    ```bash
+    npm install
+    ```
+
+## Skills Demonstrated
+
+This project involved a variety of skills:
+
+* **Front-End Development:** Building a user-friendly interface with HTML, CSS, and potentially JavaScript ([Link to a relevant front-end development tutorial or documentation]).
+* **Back-End Development:** Processing form submissions and potentially storing data in a database (if applicable) ([Link to a relevant back-end development tutorial or documentation]).
+* **Testing:** Writing unit tests to ensure code quality ([Link to a unit testing framework documentation, e.g., Jest]).
+* **Collaboration:** Working effectively in a team using Git for version control ([Link to Git documentation]).
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Acknowledgements
+Thanks to MichaelKentBurns.com and all the cohort-1 students for their contributions.
