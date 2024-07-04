@@ -11,6 +11,7 @@ const userForm = document.getElementById("user-data-form");
 
 async function loadData() {
   const email = emailInput.value.trim();
+  const displayURL = "../Demo-backend/Display.php";
 
   if (!email) {
     alert("Please enter your email address.");
@@ -19,7 +20,7 @@ async function loadData() {
 
   try {
     const response = await fetch(
-      `${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/Display.php
+      `${displayURL}
       `,
       {
         // Replace with your actual endpoint

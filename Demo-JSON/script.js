@@ -119,7 +119,7 @@ function saveSurveyResults(data) {
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
 
 
-  fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/`, {
+  fetch(`../Demo-backend/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -156,8 +156,8 @@ function populateSurveyList() {
   const getFilesURL = "../Demo-backend/GetFiles.php";
 
 
-  fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php`) // Replace with your server endpoint
-  //fetch(getFilesURL)
+  //fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php`) // Replace with your server endpoint
+  fetch(getFilesURL)
     .then(response => response.json())
     .then(data => {
       const list = document.createElement("ul");
