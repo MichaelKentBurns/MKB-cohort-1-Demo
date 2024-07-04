@@ -169,7 +169,7 @@ select{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
   }
   .form-container{
     padding: 10px;
@@ -177,7 +177,7 @@ select{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-    max-width: 440px;
+    /* max-width: 440px; */
     /* overflow: hidden; */
     
 }
