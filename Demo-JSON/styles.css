@@ -9,7 +9,7 @@ body {
   align-items: center;
   /*height:190vh;*/
   width:100%;
-  max-width: -400px;
+  /* max-width: -400px; */
   background-image: url(map-image.png);
 }
 pre{
@@ -178,7 +178,7 @@ select{
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
     max-width: 440px;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
     
