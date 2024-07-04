@@ -149,22 +149,24 @@ function saveSurveyResults(data) {
 
  
 }
-// Function to populate the survey list based on available files
 function populateSurveyList() {
   const surveyListElement = document.getElementById("survey-list");
   surveyListElement.innerHTML = ""; // Clear existing content
   const getFilesURL = "../Demo-backend/GetFiles.php";
 
-
-  //fetch(`${localDomain}/dashboard/MKB/cohort1/MKB-cohort-1-Demo/Demo-backend/GetFiles.php`) // Replace with your server endpoint
   fetch(getFilesURL)
     .then(response => response.json())
     .then(data => {
       const list = document.createElement("ul");
-      data.forEach((survey) => { // Assuming data is an array of survey objects
+      data.forEach((survey) => {
         const listItem = document.createElement("li");
-        listItem.textContent = survey.title || survey.name+".json" || 'Unknown Survey'; // Use title or name if available, fallback to 'Unknown Survey'
-        listItem.addEventListener("click", () => loadSurveyData(survey.id || survey.name+".json")); // Use id or fileName to load specific survey
+        listItem.textContent = survey.title || survey.name + ".json" || 'Unknown Survey'; // Use title or name if available, fallback to 'Unknown Survey'
+        listItem.addEventListener("click", () => {
+          // Hide remaining list items
+          surveyListElement.querySelectorAll('li').forEach(item => item.style.display = 'none');
+          // Load survey data (optional)
+          loadSurveyData(survey.id || survey.name + ".json"); 
+        });
         list.appendChild(listItem);
       });
       surveyListElement.appendChild(list);
@@ -174,6 +176,7 @@ function populateSurveyList() {
       alert('Error retrieving survey list from server.');
     });
 }
+
 populateSurveyList(); // Call the function to populate the list on load
 
 
