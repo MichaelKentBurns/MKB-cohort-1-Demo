@@ -194,6 +194,9 @@ select{
     color: #666;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+button:active{
+  border:solid #333 2px;
+}
 @media (max-width:900px) {
   .form-container,#question-container,.container{
     
