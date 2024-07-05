@@ -12,18 +12,12 @@ class Queries
     {
         $this->conn = $databaseConnection->getConnection();
     }
-
     public function insertSurvey($title)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Surveys (title) SELECT :title WHERE NOT EXISTS (SELECT * FROM Surveys WHERE title = :title)");
+        $stmt = $this->conn->prepare("INSERT INTO Surveys (title) VALUES (:title)");
         $stmt->bindParam(':title', $title);
         $stmt->execute();
-
-        if ($this->conn->lastInsertId() == 0) {
-            return $this->conn->query("SELECT id FROM Surveys WHERE title = '$title'")->fetchColumn();
-        } else {
-            return $this->conn->lastInsertId();
-        }
+        return $this->conn->lastInsertId();
     }
 
     public function insertQuestion($survey_id, $question_text)
