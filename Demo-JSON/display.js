@@ -20,8 +20,7 @@ async function loadData() {
 
   try {
     const response = await fetch(
-      `${displayURL}
-      `,
+      `${displayURL}`,
       {
         // Replace with your actual endpoint
         method: "GET", // Specify GET method for retrieving data
@@ -43,17 +42,33 @@ async function loadData() {
 
     if (foundSurveys.length) {
       userDataContainer.innerHTML = `<h2>User Answers</h2>`;
+      userDataContainer.innerHTML += `<table>
+        <thead>
+          <tr>
+            <th>Survey Title</th>
+            <th>Question</th>
+            <th>Answer</th>
+          </tr>
+        </thead>
+        <tbody>
+        `;  // Open table body
 
       foundSurveys.forEach((survey) => {
-        userDataContainer.innerHTML += `<h3>Survey: ${survey.title}</h3>`; // Add survey title
+        userDataContainer.innerHTML += `
+          <tr>
+            <td>${survey.title}</td>  </tr>`;
 
         survey.questions.forEach((question) => {
           userDataContainer.innerHTML += `
-            <p>Question: ${question.question_text}</p>
-            <p>Answer: ${question.answer_text}</p>
-          `;
+            <tr>
+              <td></td>  <td>${question.question_text}</td>
+              <td>${question.answer_text}</td>
+            </tr>`;
         });
       });
+
+      userDataContainer.innerHTML += `</tbody>
+      </table>`; // Close table body
       userDataContainer.style.display = "block"; // Display user data container
     } else {
       userDataContainer.innerHTML = "<p>User email not found in any answers.</p>";
