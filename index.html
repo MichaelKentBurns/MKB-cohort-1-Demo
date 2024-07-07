@@ -40,7 +40,9 @@
             background: rgb(208, 237, 204);
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow:04px 6px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow:4px 6px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.1);
+            max-width: 800px; /* Limit container width for larger screens */
+            width: 100%; /* Responsive width */
         }
          h1 {
              margin-bottom: 1.2rem;
@@ -78,7 +80,7 @@
     display: flex;
 }
 .nav-links li {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .nav-links a {
@@ -101,14 +103,33 @@
     display: inline-block;
     margin-left:373px;
 }
+.nav-links li {
+    margin-left: 20px;
+}
+
 /* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1d5e27;
+        padding: 0px;
+        border-radius: 2px 1px 2px 1px;
+        max-width: 100%; /* Ensure navbar spans full width */
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+}
 @media (max-width: 768px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #306739;
-        padding: 10px 20px;
+        padding: 10px;
         border-radius: 10px 10px 5px 5px;
         max-width: 100%; /* Ensure navbar spans full width */
         width: 100%;
@@ -131,6 +152,8 @@
         text-align: center;
         margin: 10px 0;
         background-color: #03805e;
+        margin-left: 0; /* Remove left margin for nav items */
+        margin-top: 5px; /* Add top margin for better spacing */
     }
 
     .nav-links a {
@@ -175,14 +198,16 @@ img{
         }*/
         
     .container {
-        text-align: center;
-        background: rgb(208, 237, 204);
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
-        max-width: 400px; /* Limit container width for larger screens */
-        width: 100%; /* Responsive width */
+    padding: 20px;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
+    width: 100%;
+    max-width: 440px; 
     }
+}
+.container{
+    height:auto;
 }
 @media (max-width: 600px) {
     /* Mobile styles */
