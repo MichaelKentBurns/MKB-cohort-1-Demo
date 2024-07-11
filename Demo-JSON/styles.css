@@ -172,12 +172,12 @@ select{
      max-width: 840px; 
   }
   .form-container{
-    padding: 10px;
+    padding: 20px;
     /*padding-left: 10px;*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-    max-width: 840px; 
+    max-width: 678px; 
     /* overflow: hidden; */
     
 }
