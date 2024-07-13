@@ -1,28 +1,32 @@
-body {
-  font-family:Arial, sans-serif;
-  margin: 5px;
-  background-color: rgb(116, 149, 125);
-  /*font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items: center;
-  /*height:190vh;*/
-  width:100%;
-  /* max-width: -400px; */
-  background-image: url(map-image.png);
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
-pre{
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+pre {
   white-space: pre-wrap;
   word-wrap: break-word;
-  padding-right:2px;
-  /* margin-bottom: 20px; */
-  background-color: #a1c3a2;
-    border:1px solid #ddd;
-    border-radius: 5px 3px 3px 5px ;
-    /* max-height: 300vh;
-    overflow: hidden; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-right: 2px;
+
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px 3px 3px 5px;
+
+  font-family: "Poppins", sans-serif;
 }
 #survey-list {
   margin-bottom: 20px;
@@ -47,23 +51,32 @@ pre{
 /*this style is made for keeping this page smooth*/
 form {
   border: 0px solid #eeee;
-  border-radius: 0px 0px 0px 1px ;
+  border-radius: 0px 0px 0px 1px;
 }
 /* Full-width inputs */
-input[type=text], input[type=email] {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+ input:focus ~ label,  textarea:focus ~ label,
+input:valid ~ label, textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
 }
 
 /* Set a style for all buttons */
 button {
   width: 100%;
-  background-color:rgb(116, 149, 125);
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -89,14 +102,13 @@ button:hover {
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
-  
 }
 
 /* Avatar image */
 img.avatar {
   width: 40%;
   border-radius: 50%;
-  margin:10px;
+  margin: 10px;
 }
 
 /* Add padding to containers */
@@ -105,140 +117,143 @@ img.avatar {
   margin-right: 20%;
   margin-left: 20%;
 }
-textarea{
-    width:100%;
-    display: flex;
-    margin:5px 0 5px 0;
+textarea {
+  width: 100%;
+  display: flex;
+  margin: 5px 0 5px 0;
+  height: 70px;
 }
-select{
-    display:flex;
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin:5px 0 5px 0;
-  }
-  option {
-    padding: 5px 10px;
-  }
-  option:hover {
-    background-color: red; /* Light gray background on hover */
-  }
-  .developer{
-    box-shadow:2px 2px 2px 2px ;
-    border-radius: 4px 2px 4px 2px;
-    margin-top: 7px;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-  
- }
- .development{
-    box-shadow:2px 2px 2px 2px ;
-    border-radius: 4px 2px 4px 2px;
-    margin-top: 7px;
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
- }
- input:hover,select:hover{
-  top: -2px;
+select {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 5px 0 5px 0;
+}
+option {
+  padding: 5px 10px;
+}
+option:hover {
+  background-color: red; /* Light gray background on hover */
+}
+.developer {
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 4px 2px 4px 2px;
+  margin-top: 7px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.development {
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 4px 2px 4px 2px;
+  margin-top: 7px;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.markup_languages {
+  width: 17px;
+}
+li {
   cursor: pointer;
-  border: 1px outset rgb(83, 177, 83);
-  box-shadow: 3px 3px 4px 4px green ;
-  border-radius: 5px 5px 5px 5px;
-  opacity: 0.6;
+  display: inline-block;
+  padding-right: 100%;
+  margin-top: 20px;
+  padding-left: 160px;
+  padding-top: 10px;
 }
-  .markup_languages{
-    width:17px;
-  }
-  li{
-    cursor: pointer;
-    display:inline-block;
-    padding-right: 100%;
-    margin-top: 20px;
-    padding-left: 160px;
-    padding-top: 10px;
-  }
-  .form-container,#question-container,.container{
-    
+.form-container,
+#question-container,
+.container {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+.form-container {
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#survey-list {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+}
+button:active {
+  border: solid #333 2px;
+}
+/* display page */
+td{
+  font-weight: bold;
+}
+#user-data-container{
+  padding: 13px;
+}
+@media (max-width: 900px) {
+  .form-container,
+  #question-container,
+  .container {
     background-color: #e4e4e4ee;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-     max-width: 840px; 
+    max-width: 500px;
   }
-  .form-container{
+  .form-container {
     padding: 10px;
     /*padding-left: 10px;*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-    max-width: 840px; 
+    max-width: 500px;
     /* overflow: hidden; */
-    
-}
-    
-    h1, #survey-list {
-      margin-bottom: 10px;
-      font-size: 24px;
-      color: #333;
-      text-align: center;
   }
-  p,#survey-list ul,h1{
-    margin-bottom: 2px;
-    font-size: 18px;
-    color: #666;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-button:active{
-  border:solid #333 2px;
-}
-@media (max-width:900px) {
-  .form-container,#question-container,.container{
-    
+
+@media (max-width: 678px) {
+  .form-container,
+  #question-container,
+  .container {
     background-color: #e4e4e4ee;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-     max-width: 500px; 
-
+    max-width: 440px;
   }
-  .form-container{
-    padding: 10px;
-    /*padding-left: 10px;*/
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
-    width: 100%;
-    max-width: 500px; 
-    /* overflow: hidden; */
-}
-    
-}
-
-@media (max-width:678px) {
-  .form-container,#question-container,.container{
-    
-    background-color: #e4e4e4ee;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
-    width: 100%;
-     max-width: 440px; 
-  }
-  .form-container{
+  .form-container {
     padding: 20px;
     padding-left: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-    max-width: 440px; 
+    max-width: 440px;
     /* overflow: hidden; */
-    
-}
-    
+  }
 }

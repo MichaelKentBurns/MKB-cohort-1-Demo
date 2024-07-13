@@ -61,7 +61,7 @@ async function loadData() {
         survey.questions.forEach((question) => {
           userDataContainer.innerHTML += `
             <tr>
-              <td></td>  <td>${question.question_text}</td>
+              <td></td>  <td class="question-row">${question.question_text}</td>
               <td>${question.answer_text}</td>
             </tr>`;
         });
