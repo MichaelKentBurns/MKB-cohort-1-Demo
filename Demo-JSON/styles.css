@@ -225,23 +225,21 @@ td{
     width: 100%;
     max-width: 500px;
   }
-<<<<<<< HEAD
-  .form-container {
-    padding: 10px;
-=======
+
+ 
+
   .form-container{
     padding: 20px;
->>>>>>> 24a8aa53ebc8281ff9c57305b09a03dad4eb8c37
+
     /*padding-left: 10px;*/
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
-<<<<<<< HEAD
+
     max-width: 500px;
-=======
+
     max-width: 678px; 
->>>>>>> 24a8aa53ebc8281ff9c57305b09a03dad4eb8c37
-    /* overflow: hidden; */
+
   }
 }
 
@@ -263,6 +261,6 @@ td{
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
     max-width: 440px;
-    /* overflow: hidden; */
+  
   }
 }
