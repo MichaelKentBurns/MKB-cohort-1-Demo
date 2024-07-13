@@ -56,6 +56,48 @@
         a:hover {
          text-decoration: underline;
 }
+@media (max-width:678px) {
+    .sidebar {
+            width: 150px;
+            background-color: #2c3e50;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: small;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 17px 22px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: small;
+        }
+        .content {
+            margin-left: 150px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+       h1{
+        font-size: x-large;
+       }
+       h2,h3{
+        font-size: large;
+       }
+} 
+code{
+   font-size: large;
+   font-weight: 900;
+   color:rgb(133, 129, 129);
+}
     </style>
 </head>
 <body>
@@ -81,12 +123,12 @@
             <li>Full-Stack Development, Comprehensive development services from frontend to backend.</li>
                <ul>
                  <strong>Front-End Development</strong>
-                  <li>HTML5 and CSS3: Creating responsive, accessible, and visually appealling websites</li>
-                  <li>JavaScript: Implementing dynamic functionalities and interactive user interfaces.</li>
-                  <li>Frameworks: Expertise in front-end frameworks like React</li>
+                  <li><code>HTML5 and CSS3:</code> Creating responsive, accessible, and visually appealling websites</li>
+                  <li><code>JavaScript:</code> Implementing dynamic functionalities and interactive user interfaces.</li>
+                  <li><code>Frameworks:</code> Expertise in front-end frameworks like React, Bootsrap,...</li>
                  <strong>Back-End Development</strong>
-                  <li>Node.js: Building scalable and efficient server-side applications.</li>
-                  <li>Databases: MySQL</li>
+                  <li><code>Node.js:</code> Building scalable and efficient server-side applications.</li>
+                  <li><code>Databases:</code> MySQL,Sqlite,...</li>
                 </ul>
         </ul>
         <p>Our team possesses these skills and we are excited to demonstrate them through this demo site.</p>
