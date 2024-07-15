@@ -39,5 +39,15 @@ class SurveyDatabase
             FOREIGN KEY (question_id) REFERENCES Questions(id)
         )";
         $this->conn->exec($createAnswersTable);
+
+        $createAllUsersTables = "
+        CREATE TABLE IF NOT EXISTS AllUsers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            email TEXT NOT NULL,
+            survey_id INTEGER NOT NULL,
+            FOREIGN KEY (survey_id) REFERENCES Surveys(id),
+        )";
+        $this->conn->exec($createAllUsersTables);
     }
 }
