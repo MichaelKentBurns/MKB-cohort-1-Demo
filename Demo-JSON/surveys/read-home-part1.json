@@ -1,0 +1,71 @@
+{
+  "title": "Cohort-2 Starter Course Task 2 - Read Home part 1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What's your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your last name?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "text": "Have you had any problems so far accessing this survey? If so breifly describe them.",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "text": "Did the red 'NEW!' ball alert you to some new content on the site?  If so, did you go look at that content?",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "Before today, what has been your goal and hope for a carreer in software development?",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "Which of the skills and concepts of front end web development were you already aware of?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "Have you already used some of the online training sites to learn skills? If so, which sites?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "Which of the skills and concepts of front end web development do you still need to learn?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "Are you already familiar with Git and GitHub?  If so, what is the URL for your GitHub account?",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "text-area",
+      "text": "How much time has Task 2 taken to complete?",
+      "required": true
+    }
+  ]
+}
