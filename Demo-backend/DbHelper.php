@@ -46,7 +46,7 @@ class SurveyDatabase
             name TEXT NOT NULL,
             email TEXT NOT NULL,
             survey_id INTEGER NOT NULL,
-            FOREIGN KEY (survey_id) REFERENCES Surveys(id),
+            FOREIGN KEY (survey_id) REFERENCES Surveys(id)
         )";
         $this->conn->exec($createAllUsersTables);
     }
