@@ -1,0 +1,89 @@
+{
+  "title": "Cohort-2 Starter Course Task 4 - Read Front end web",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What's your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your last name?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "text": "Has your experience of taking these surveys gotten better?  If so, how is it better?",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "text": "Have you explored any of the web mentoring sites listed on this page?  If so, which ones and what did you learn?",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "Have you taken any of the challenges in those sites? If so which one?",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "Were you able to create your own web page on your local computer? What did you learn?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "Did you already know any of the HTML5 new features? Did you learn any more in this lesson?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "What is the difference between the purpose of HTML and CSS?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "Do you know anything about the JavaScript language? What have you written using it?",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "text-area",
+      "text": "What is the difference between a URL starting with 'file:' and 'http:'?",
+      "required": true
+    },
+    {
+      "id": 12,
+      "type": "text-area",
+      "text": "What more do you want to learn about front end development?",
+      "required": true
+    },
+    {
+      "id": 13,
+      "type": "text-area",
+      "text": "Did you read Philemon's roadmap to a career in frong end development?",
+      "required": true
+    },
+    {
+      "id": 14,
+      "type": "text-area",
+      "text": "How much time has Task 4 taken to complete?",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Cohort-2 Starter Course - Challenge - Tell me about yourself",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What is your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text-area",
+      "text": "Other contact info such as Facebook, LinkedIn, Twitter, Discord, GitHub, others?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text-area",
+      "text": "Where do you live and what is your city or country like?",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text-area",
+      "text": "What is your education background?",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "What is your development training and experience?",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "What is your career experience and goals?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "What are your hobbies?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "What kinds of development have you already done?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "What would you like to learn to do?",
+      "required": true
+    }
+  ]
+}

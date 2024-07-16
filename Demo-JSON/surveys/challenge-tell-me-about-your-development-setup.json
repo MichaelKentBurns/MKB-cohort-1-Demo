@@ -1,0 +1,89 @@
+{
+  "title": "Cohort-2 Starter Course - Challenge - Tell me about your-development-setup",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What is your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text-area",
+      "text": "Your computer model, memory, disk, processor.",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text-area",
+      "text": "Additional screens you have attached.",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text-area",
+      "text": "Your internet access and how it works for you. What you can and cannot do.",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "Your operating system and release.",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "What browser(s) you use.",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "Do you use a command line tool/shell and which one?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "Do you use a simple text editor or a graphical editor or IDE?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "Do you use GitHub or other site to publish your work?",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "text-area",
+      "text": "Do you use command line git to commit and push work or do you use a program like GitHub Desktop or other graphical tools?",
+      "required": true
+    },
+    {
+      "id": 12,
+      "type": "text-area",
+      "text": "Do you host your finished work so it is visible to the public?",
+      "required": true
+    },
+    {
+      "id": 13,
+      "type": "text-area",
+      "text": "What do you like best about your current setup?",
+      "required": true
+    },
+    {
+      "id": 14,
+      "type": "text-area",
+      "text": "What don’t you like, or what could be better?",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "title": "Cohort-2 Starter Course Task 3 - Read About page",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What's your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your last name?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "text": "What are the two specialized profiles on Ashuza's Upwork Profile?",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "text": "What certifications did you notice in the cohort-1 team's profiles on Upwork?",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "What could you add as a specialized profile on your Upwork profile?",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "What features of the cohort-1 team's GitHub profiles would attract an Upwork client's attention?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "How does having several repositories in your GitHub profile show that you are a valuable talent?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "What is the benefit of contributing to repositories that are not your own?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "What did you notice when looking at the MKB-cohort-1-Demo repository?",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "text-area",
+      "text": "What do you think you could add to your Upwork profile?",
+      "required": true
+    },
+    {
+      "id": 12,
+      "type": "text-area",
+      "text": "How much time has task 3 taken to complete?",
+      "required": true
+    }
+  ]
+}
