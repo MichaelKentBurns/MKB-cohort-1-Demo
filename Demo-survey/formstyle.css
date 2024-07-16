@@ -100,7 +100,7 @@ select:hover,input:hover,textarea:hover{
   box-shadow:0 0 8px rgba(0,123,255,0.6) ;
   border-color:#007BFF;
 }
-textarea:focus,select:focus,input[type="email"]:focus{
+textarea:focus,select:focus,input[type="email"]:focus,input:focus{
     border-color: #0056b3;
     box-shadow:0 0 8px rgba(0, 86, 179, 0.6);
     Outline: none;
@@ -111,4 +111,9 @@ textarea:focus,select:focus,input[type="email"]:focus{
   padding:10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+ }
+ /*Styling for labels*/
+ label{
+  color:#333333;
+  font-weight: bold;
  }
