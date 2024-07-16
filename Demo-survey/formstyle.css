@@ -86,3 +86,22 @@ select {
     cursor: pointer;
     width: 100%;
 }
+input[type="text"],input[type="email"],textarea,select{
+  border:2px solid #cccccc;/* Light gray border for a clean look*/
+  border-radius:4px;/* Rounded corners for a modern feel*/
+  padding:10px;/* Adequate padding for better readability*/
+  font-size:16px;/* Comfortable front size for the text inputs*/
+  width:100%;/* Full width to align with the container*/
+  box-sizing: border-box;/* Ensures padding and border are included in the element's total width and height*/
+  transition:border-color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;/* Smooth transition for border color and shadow on hover and focus*/
+}
+select:hover,input:hover,textarea:hover{
+  border-radius:10px 5px 5px 10px;
+  box-shadow:0 0 8px rgba(0,86,179,0.6) ;
+  border-color:#007BFF;
+}
+textarea:focus,select:focus,input[type="email"]:focus{
+    border-color: #0056b3;
+    box-shadow:0 0 8px rgba(0, 86, 179, 0.6);
+    Outline: none;
+ }
