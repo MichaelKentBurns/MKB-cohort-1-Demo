@@ -97,11 +97,18 @@ input[type="text"],input[type="email"],textarea,select{
 }
 select:hover,input:hover,textarea:hover{
   border-radius:10px 5px 5px 10px;
-  box-shadow:0 0 8px rgba(0,86,179,0.6) ;
+  box-shadow:0 0 8px rgba(0,123,255,0.6) ;
   border-color:#007BFF;
 }
 textarea:focus,select:focus,input[type="email"]:focus{
     border-color: #0056b3;
     box-shadow:0 0 8px rgba(0, 86, 179, 0.6);
     Outline: none;
+ }
+ input[type="submit"]{
+  background-color: #007BFF;
+  color:white;
+  padding:10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
  }
