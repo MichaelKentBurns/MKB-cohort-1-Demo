@@ -30,15 +30,21 @@ pre {
 }
 #survey-list {
   margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+ 
 }
 
 #survey-list ul {
   list-style: none;
   padding: 0;
+  
+
 }
 
 #survey-list li {
   margin-bottom: 1px;
+
 }
 
 #question-container {

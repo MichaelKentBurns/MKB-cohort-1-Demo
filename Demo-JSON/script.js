@@ -39,21 +39,50 @@ function displaySurvey(data) {
     if (question.type === "text") {
       answerElement = document.createElement("input");
       answerElement.setAttribute("type", "text");
-      answerElement.required = question.required || false; // Set required based on question property
-    } else if (question.type === "multiple-choice") {
+      answerElement.setAttribute('required', '');
+
+      // Check for cookie values for name and email (optional)
+      if (question.text ==="What is your first name?") {
+
+        const firstNameCookie = getCookie("firstName");
+        if (firstNameCookie) {
+          answers[question.text] = firstNameCookie;
+          answerElement.value = firstNameCookie;
+        }
+      }else if(question.text === "What is your last name?"){
+        const lastNameCookie = getCookie("lastName");
+        if (lastNameCookie) {
+          answers[question.text] = lastNameCookie;
+          answerElement.value = lastNameCookie;
+        }
+      }
+       else if (question.text === "What is your email?") {
+        const emailCookie = getCookie("email");
+        if (emailCookie) {
+          answers[question.text] = emailCookie;
+          answerElement.value = emailCookie;
+        }
+      }
+    }  else if (question.type === "multiple-choice") {
       answerElement = document.createElement("select");
       question.options.forEach((option) => {
         const optionElement = document.createElement("option");
         optionElement.value = option;
         optionElement.textContent = option;
         answerElement.appendChild(optionElement);
+         // Initially select the first option
+  answerElement.selectedIndex = 0;
+  // Pre-populate answers object with the default selected value
+  answers[question.text] = answerElement.value;
+
       });
     }else if(question.type==="text-area"){
       answerElement = document.createElement("textarea");
       answerElement.required = question.required || false; // Set required based on question property
       answerElement.rows = 5; // Set the number of visible rows
       answerElement.cols = 40; // Set the number of visible columns
-      answerElement.textContent = "Write your text here...";
+      answerElement.placeholder= "Write your text here...";
+      answerElement.setAttribute('required', '');
 
     }
     
@@ -88,10 +117,34 @@ function displaySurvey(data) {
   questionContainerElement.style.display = "block";
 }
 
+// Function to get a cookie value by name
+function getCookie(name) {
+  const value = `; `;
+  const documentCookie = document.cookie;
+  const parts = documentCookie.split(value);
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i].split('=');
+    if (part[0].trim() === name) {
+      return decodeURIComponent(part[1]); // Decode the cookie value
+    }
+  }
+  return null; // Return null if cookie is not found
+}
+
+// Function to set a cookie
+function setCookie(name, value, expirationDays) {
+  const expires = new Date();
+  expires.setDate(expires.getDate() + expirationDays);
+  const cookieValue = `${name}=${encodeURIComponent(value)}; expires=${expires.toUTCString()}; path=/`;
+  document.cookie = cookieValue;
+}
+
 
 //function to save results
 function saveSurveyResults(data) {
-  const firstName = data.answers ? data.answers["What's your first name?"] : ""; // Handle potential missing answer
+  const firstName = data.answers ? data.answers["What is your first name?"] : ""; // Handle potential missing answer
+  const email = data.answers ? data.answers["What is your email?"] : ""; // Handle potential missing answer
+  const lastName = data.answers ? data.answers["What is your last name?"] : ""; // Handle potential missing answer
   const filename = `${firstName ? firstName+" responses "+data.title : 'unknown'}-${Date.now()}.json`; // Use firstName if available, fallback to 'unknown'
   const jsonData = JSON.stringify(data, null, 2); // Stringify data with indentation
 
@@ -117,6 +170,17 @@ function saveSurveyResults(data) {
     document.body.appendChild(downloadLink);
     downloadLink.click();
     URL.revokeObjectURL(downloadLink.href); // Revoke the object URL after download
+
+     // Save user's name and email in cookies 
+     if (firstName) {
+      setCookie("firstName", firstName, 30); // Set cookie for 30 days
+    }
+    if (email) {
+      setCookie("email", email, 30); // Set cookie for 30 days
+    }
+    if(lastName){
+      setCookie("lastName",lastName,30)// Set cookie for 30 days
+    }
 
 
   fetch(`../Demo-backend/`, {
