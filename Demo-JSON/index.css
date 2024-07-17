@@ -5,6 +5,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+overflow-x: hidden;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -16,6 +17,7 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+ 
 }
 a {
   display: inline-block;
@@ -28,13 +30,16 @@ a {
 a:hover {
   background-color: #55bff8;
 }
-.link_footer,
-.link_footer:hover {
-  display: inline-block;
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.link_footer {
   color: #3498db;
   text-decoration: none;
   background-color: transparent;
-  padding: 0.3rem;
 }
 .container {
   text-align: center;
@@ -42,8 +47,7 @@ a:hover {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
-  max-width: 800px; /* Limit container width for larger screens */
-  width: 100%; /* Responsive width */
+
 }
 h1 {
   margin-bottom: 1.2rem;
@@ -62,18 +66,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-* {
-  margin: 0;
-  padding: 3px;
-  box-sizing: border-box;
-}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #9f01ea;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 10px 10px 5px 5px;
 }
 
@@ -121,6 +121,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 5px;
   flex-wrap: wrap;
 }
 img {
@@ -129,36 +130,12 @@ img {
   
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9f01ea;
-    padding: 0px;
-    border-radius: 2px 1px 2px 1px;
-    max-width: 100%; /* Ensure navbar spans full width */
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-}
 @media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9f01ea;
-    padding: 10px;
-    border-radius: 10px 10px 5px 5px;
+    height: 50%;
     max-width: 100%; /* Ensure navbar spans full width */
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure it's above other content */
+    
   }
 
   .nav-links {
@@ -185,10 +162,18 @@ img {
   .MKB {
     display: flex;
   }
+  .MKB span {
+    height: 3px;
+    width: 25px;
+    background-color: #ffffffa2;
+    margin: 2px 0;
+    border-radius: 5px;
+    display: inline-block;
+    
+  }
 
   .container {
     padding: 20px;
-    padding-left: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(203, 203, 203, 0.1);
     width: 100%;
@@ -204,78 +189,7 @@ img {
 .container {
   height: auto;
 }
-
-
-
-@media screen and (max-width: 625px) {
-  .nav-links li {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .MKB span {
-    height: 3px;
-    width: 25px;
-    background-color: #ffffffa2;
-    margin: 2px 0;
-    border-radius: 5px;
-    display: inline-block;
-    margin-left: 340px;
-  }
-}
-@media screen and (max-width: 468px) {
-  .nav-links li {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1px;
-  }
-  .MKB span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 2px 0;
-    border-radius: 5px;
-    display: inline-block;
-    margin-left: 250px;
-  }
-  body {
-    height: 100vh;
-    width: 100vh;
-  }
-}
-@media (min-width: 250px) and (max-width: 550px) {
-  .MKB span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 2px 0;
-    border-radius: 5px;
-    display: inline-block;
-    margin-left: 200px;
-    overflow: hidden;
-  }
-  */ body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
-    margin: auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 145vh;
-    width: 65vh;
-    flex-direction: column;
-  }
-  a {
-    background-color: transparent;
-    color: #3498db;
-  }
-  a:hover {
-    background-color: transparent;
-    color: grey;
-  }
-}
-/* Toggle nav-links display */
 .nav-links.active {
   display: flex;
 }
+
