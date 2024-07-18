@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="Demo-survey/lap.jpg" />
+    <title>Prospective Upwork Client Tour</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: hidden;
+      }
+      .content {
+        margin-left: 250px;
+        padding: 20px;
+        flex-grow: 1;
+        width: 100%;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+        color: white;
+        height: 100vh;
+        padding-top: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .sidebar a {
+        display: block;
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      .sidebar a:hover {
+        background-color: #56d8e4 ;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 678px) {
+        .sidebar {
+          display: none;
+        }
+        .content {
+          margin: 0;
+        }
+      }
+      code {
+        font-size: large;
+        font-weight: 900;
+        color: rgb(133, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>MKB-cohort-1</h2>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#Site_tour">Site Tour</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+      <h1>Prospective Upwork Client Tour</h1>
+      <div class="section">
+        <h2 id="home">What We Offer</h2>
+        <p>
+          We understand what you are looking for in a solo developer or a team:
+        </p>
+        <ul>
+          <li>Proven technical skills in web development</li>
+          <li>Ability to work collaboratively and communicate effectively</li>
+          <li>Experience with both frontend and backend technologies</li>
+          <li>Proficiency in modern development tools and frameworks</li>
+          <li>Strong understanding of issues and problem-solving abilities</li>
+          <li>Timely delivery and adherence to deadlines</li>
+          <li>
+            Full-Stack Development, Comprehensive development services from
+            frontend to backend.
+          </li>
+          <ul>
+            <strong>Front-End Development</strong>
+            <li>
+              <code>HTML5 and CSS3:</code> Creating responsive, accessible, and
+              visually appealling websites
+            </li>
+            <li>
+              <code>JavaScript:</code> Implementing dynamic functionalities and
+              interactive user interfaces.
+            </li>
+            <li>
+              <code>Frameworks:</code> Expertise in front-end frameworks like
+              React, Bootsrap,...
+            </li>
+            <strong>Back-End Development</strong>
+            <li>
+              <code>Node.js:</code> Building scalable and efficient server-side
+              applications.
+            </li>
+            <li><code>Databases:</code> MySQL,Sqlite,...</li>
+          </ul>
+        </ul>
+        <p>
+          Our team possesses these skills and we are excited to demonstrate them
+          through this demo site.
+        </p>
+      </div>
+      <div class="section">
+        <h2 id="about">About This Demo Site</h2>
+        <p>
+          We developed this demo site to showcase our technical skills and
+          collaborative efforts. It serves as a practical demonstration of our
+          abilities in web development, from frontend interfaces to backend
+          processing and data management.
+        </p>
+      </div>
+      <div class="section">
+        <h2 id="Site_tour">Site Tour</h2>
+        <p><a href="index.html" target="_blank">Welcome to the Demo</a></p>
+        <p>
+          We invite you to open the demo page in another window and follow along
+          with this tour.
+        </p>
+        <h3 id="contact">Contact Survey</h3>
+        <p>
+          The first feature we'd like you to explore is the 'Contact' survey:
+        </p>
+        <ul>
+          <li>Open the survey page.</li>
+          <li>Fill out the form with your details and comments.</li>
+          <li>
+            When asked "Would you like us to contact you?", select an option.
+          </li>
+          <li>Press the submit button.</li>
+        </ul>
+        <h3>JSON Survey</h3>
+        <p>
+          In this field, Upon submission, the survey page queries the backend
+          for a list of available surveys. When you select a survey, the
+          questions are retrieved from the backend and then displayed in the
+          form. After pressing the 'Submission' button, the page will generate a
+          JSON file with your results, which is displayed on the page for
+          demonstration purposes. You can download this JSON file and it will
+          also be submitted to our backend where it is stored in the database.
+        </p>
+      </div>
+      <div class="section">
+        <h2>How We Developed This Site</h2>
+        <p>
+          We invite you to explore our project's GitHub repository:
+          <a
+            href="https://github.com/MichaelKentBurns/MKB-cohort-1-Demo"
+            target="_blank"
+            >MKB Cohort 1 Demo</a
+          >
+        </p>
+        <h3>README.md</h3>
+        <p>
+          Start by reviewing the README.md file, which served as the foundation
+          for commissioning the project.
+        </p>
+        <h3>Issues Tab</h3>
+        <p>
+          Next, visit the Issues tab to see the currently open issues. Don't
+          forget to check the "14 Closed" issues to see the completed work. One
+          notable issue is "The JSON file isn't linked yet. #13," which
+          demonstrates the team’s real-time collaboration.
+        </p>
+        <h3>Code</h3>
+        <p>Finally, explore the Code section. Key directories include:</p>
+        <ul>
+          <li><strong>src:</strong> Main application source code</li>
+          <li><strong>test:</strong> Test scripts and automation tools</li>
+          <li>
+            <strong>automate:</strong> Our effort to automate testing using
+            Selenium
+          </li>
+        </ul>
+        <p>
+          We have included documentation and images to illustrate the usage of
+          Selenium for both our internal demo and future development. The
+          <code>*.side</code> file contains our automated test scripts. Refer to
+          the issue "Explore automated testing and demonstrate something. #4"
+          for details on setting up and running the tests.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Conclusion</h2>
+        <p>
+          We appreciate your consideration of our team for your upcoming
+          projects. We believe our skills and collaborative approach make us an
+          ideal choice for your web development needs. Please feel free to reach
+          out to us with any questions or to discuss potential projects.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
