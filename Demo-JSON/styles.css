@@ -214,9 +214,12 @@ button:active {
   border: solid #333 2px;
 }
 /* display page */
-td{
+/* .question-answer-pair{
+  display: flex;
+  justify-content: center;
   font-weight: bold;
-}
+} */
+
 #user-data-container{
   padding: 13px;
 }
