@@ -46,10 +46,10 @@ try {
         $question_id = $queries->insertQuestion($survey_id, $question_text);
         $queries->insertAnswer($survey_id, $question_id, $answer_text);
 
-        if ($question_text === "What is your last name?") {
-            $usersInfo["email"] = $answer_text;
-        } else if ($question_text === "What is your email?") {
+        if ($question_text === "What is your first name?") {
             $usersInfo["name"] = $answer_text;
+        } else if ($question_text === "What is your email?") {
+            $usersInfo["email"] = $answer_text;
         }
     }
 
