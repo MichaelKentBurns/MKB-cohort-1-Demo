@@ -38,6 +38,15 @@ class Queries
         $stmt->execute();
     }
 
+    public function insertUsersInfo($name, $email, $survey_id)
+    {
+        $stmt = $this->conn->prepare("INSERT INTO AllUsers (name, email, survey_id) VALUES (:name, :email, :survey_id)");
+        $stmt->bindParam(':name', $name);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':survey_id', $survey_id);
+        $stmt->execute();
+    }
+
     public function getSurveys()
     {
         $query = "
@@ -63,6 +72,17 @@ class Queries
         $stmt = $this->conn->prepare("SELECT answer_text FROM Answers WHERE survey_id = :survey_id AND question_id = :question_id");
         $stmt->bindParam(':survey_id', $survey_id);
         $stmt->bindParam(':question_id', $question_id);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getAllUsers()
+    {
+        $query = "SELECT AllUsers.id as user_id, AllUsers.name, AllUsers.email, Surveys.title
+        FROM AllUsers
+        JOIN Surveys ON AllUsers.survey_id = Surveys.id";
+
+        $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
