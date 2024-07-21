@@ -43,7 +43,8 @@ class SurveyDatabase
         $createAllUsersTables = "
         CREATE TABLE IF NOT EXISTS AllUsers (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
+            first_name TEXT NULL,
+            last_name TEXT NULL,
             email TEXT NOT NULL,
             survey_id INTEGER NOT NULL,
             FOREIGN KEY (survey_id) REFERENCES Surveys(id)
