@@ -1,0 +1,77 @@
+{
+  "title": "Cohort-2 Starter Course Task 6 - Read Fullstack",
+  "questions": [
+    {
+      "id": 1,
+      "type": "text",
+      "text": "What is your first name?",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "text": "What is your last name?",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "text": "What is your email?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "text": "Which is harder to learn: front end, back end, or full stack? Why?",
+      "required": true
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "text": "What is one major thing that a fullstack developer needs to know?",
+      "required": true
+    },
+    {
+      "id": 6,
+      "type": "text-area",
+      "text": "Are there frameworks for fullstack deployments?",
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "text-area",
+      "text": "What framework does our training site use? Why?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "text-area",
+      "text": "Name one other fullstack framework and list what it is good for?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "text-area",
+      "text": "What are some reasons to use WordPress?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "text-area",
+      "text": "Why is security so important?",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "text-area",
+      "text": "Where can you go to learn more about fullstack development?",
+      "required": true
+    },
+    {
+      "id": 15,
+      "type": "text-area",
+      "text": "How much time has Task 6 taken to complete?",
+      "required": true
+    }
+  ]
+}
