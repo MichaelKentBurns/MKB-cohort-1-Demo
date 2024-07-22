@@ -1,5 +1,5 @@
 {
-  "title": "Cohort-2 Starter Course Task 5 - Read Back end web",
+  "title": "Cohort-2 Starter Course Task 6 - Read Fullstack",
   "questions": [
     {
       "id": 1,
@@ -22,55 +22,55 @@
     {
       "id": 4,
       "type": "text",
-      "text": "What is the main program that runs the front end?",
+      "text": "Which is harder to learn: front end, back end, or full stack? Why?",
       "required": true
     },
     {
       "id": 5,
       "type": "text",
-      "text": "Name one program or kind of program that always runs in the back end.",
+      "text": "What is one major thing that a fullstack developer needs to know?",
       "required": true
     },
     {
       "id": 6,
       "type": "text-area",
-      "text": "Name two programming languages that are often used in the back end?",
+      "text": "Are there frameworks for fullstack deployments?",
       "required": true
     },
     {
       "id": 7,
       "type": "text-area",
-      "text": "Name a data storage program that is common in the back end.",
+      "text": "What framework does our training site use? Why?",
       "required": true
     },
     {
       "id": 8,
       "type": "text-area",
-      "text": "Name on essential skill that you should learn to be a back end developer.",
+      "text": "Name one other fullstack framework and list what it is good for?",
       "required": true
     },
     {
       "id": 9,
       "type": "text-area",
-      "text": "What is a very common programming tool used by back end developers?",
+      "text": "What are some reasons to use WordPress?",
       "required": true
     },
     {
       "id": 10,
       "type": "text-area",
-      "text": "What are two benefits of doing code reviews?",
+      "text": "Why is security so important?",
       "required": true
     },
     {
       "id": 11,
       "type": "text-area",
-      "text": "Would you like to learn to be a backend developer?  If so why?",
+      "text": "Where can you go to learn more about fullstack development?",
       "required": true
     },
     {
       "id": 15,
       "type": "text-area",
-      "text": "How much time has Task 5 taken to complete?",
+      "text": "How much time has Task 6 taken to complete?",
       "required": true
     }
   ]
