@@ -46,6 +46,7 @@ class SurveyDatabase
             name TEXT NOT NULL,
             email TEXT NOT NULL,
             survey_id INTEGER NOT NULL,
+            date TEXT DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (survey_id) REFERENCES Surveys(id)
         )";
         $this->conn->exec($createAllUsersTables);
