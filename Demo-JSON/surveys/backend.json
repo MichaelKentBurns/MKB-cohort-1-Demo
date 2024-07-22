@@ -4,7 +4,7 @@
       {
         "id":1,
         "type": "text",  
-        "text": "What's your first name?",
+        "text": "What is your first name?",
         "required":true  
       },
       {

@@ -42,38 +42,28 @@ async function loadData() {
 
     if (foundSurveys.length) {
       userDataContainer.innerHTML = `<h2>User Answers</h2>`;
-      userDataContainer.innerHTML += `<table>
-        <thead>
-          <tr>
-            <th>Survey Title</th>
-            <th>Question</th>
-            <th>Answer</th>
-          </tr>
-        </thead>
-        <tbody>
-        `;  // Open table body
-
+    
       foundSurveys.forEach((survey) => {
         userDataContainer.innerHTML += `
-          <tr>
-            <td>${survey.title}</td>  </tr>`;
-
+          <div class="survey-container">
+            <h3>Survey Title: ${survey.title}</h3>`; // Use h3 for survey title
+    
         survey.questions.forEach((question) => {
           userDataContainer.innerHTML += `
-            <tr>
-              <td></td>  <td class="question-row">${question.question_text}</td>
-              <td>${question.answer_text}</td>
-            </tr>`;
+            <div class="question-answer-pair" style="display:flex; justify-content: center; gap: 1rem;">
+              <span class="question-text" style="flex: 1;font-weight: bold;color:grey">${question.question_text}</span>
+              <span class="answer-text" style=" color: blueviolet; flex: 1;">${question.answer_text}</span>
+            </div>`;
         });
+    
+        userDataContainer.innerHTML += `
+          </div>`; // Close survey container
       });
-
-      userDataContainer.innerHTML += `</tbody>
-      </table>`; // Close table body
-      userDataContainer.style.display = "block"; // Display user data container
     } else {
       userDataContainer.innerHTML = "<p>User email not found in any answers.</p>";
-      userDataContainer.style.display = "block"; // Display "User not found" message
+      userDataContainer.style.display = "flex"; // Display "User not found" message
     }
+    
   } catch (error) {
     console.error("Error fetching user data:", error);
     alert("Error retrieving your data. Please try again later.");

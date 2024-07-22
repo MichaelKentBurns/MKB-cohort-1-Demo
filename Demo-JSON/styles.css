@@ -30,15 +30,21 @@ pre {
 }
 #survey-list {
   margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+ 
 }
 
 #survey-list ul {
   list-style: none;
   padding: 0;
+  
+
 }
 
 #survey-list li {
   margin-bottom: 1px;
+
 }
 
 #question-container {
@@ -208,9 +214,12 @@ button:active {
   border: solid #333 2px;
 }
 /* display page */
-td{
+/* .question-answer-pair{
+  display: flex;
+  justify-content: center;
   font-weight: bold;
-}
+} */
+
 #user-data-container{
   padding: 13px;
 }
@@ -263,4 +272,9 @@ td{
     max-width: 440px;
   
   }
+}
+#survey-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
