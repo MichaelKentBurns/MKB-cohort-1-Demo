@@ -78,7 +78,7 @@ class Queries
 
     public function getAllUsers()
     {
-        $query = "SELECT AllUsers.id as user_id, AllUsers.name, AllUsers.email, Surveys.title
+        $query = "SELECT AllUsers.id as user_id, AllUsers.name, AllUsers.email, Surveys.title, AllUsers.date
         FROM AllUsers
         JOIN Surveys ON AllUsers.survey_id = Surveys.id";
 
