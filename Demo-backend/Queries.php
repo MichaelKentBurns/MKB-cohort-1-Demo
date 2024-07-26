@@ -96,4 +96,13 @@ class Queries
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getContactMessages()
+    {
+        $query = "SELECT name, email, contact_later, message, date FROM Contact";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
