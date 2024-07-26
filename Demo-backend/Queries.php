@@ -47,6 +47,16 @@ class Queries
         $stmt->execute();
     }
 
+    public function insertContact($name, $email, $contact_later, $message)
+    {
+        $stmt = $this->conn->prepare("INSERT INTO Contact (name, email, contact_later, message) VALUES (:name, :email, :contact_later, :message)");
+        $stmt->bindParam(':name', $name);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':contact_later', $contact_later);
+        $stmt->bindParam(':message', $message);
+        $stmt->execute();
+    }
+
     public function getSurveys()
     {
         $query = "
