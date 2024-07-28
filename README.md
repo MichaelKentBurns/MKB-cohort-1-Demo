@@ -63,7 +63,8 @@ Oversees the deployment of the final application onto the designated demo platfo
 This project involves a variety of skills, including:
 
 * **Front-End Development:** Building a user-friendly interface with HTML, CSS, and potentially JavaScript (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/Demo-survey) (Front-End Development Tutorial).
-* **Back-End Development:** Processing form submissions and potentially storing data in a database (if applicable), start with (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/Demo-JSON)(JSON), then dive deep into the Back-End (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/Demo-backend) (Back-End Development Tutorial).
+* **Back-End Development:** Processing form submissions and potentially storing data in a database (if applicable), start with (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/Demo-JSON)
+ (JSON), then dive deep into the Back-End (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/Demo-backend) (Back-End Development Tutorial).
 * **Testing:** Writing unit tests to ensure code quality (https://github.com/MichaelKentBurns/MKB-cohort-1-Demo/tree/main/test) (Unit Testing Documentation).
 * **Collaboration:** Working effectively in a team using Git for version control [https://github.com/MichaelKentBurns/MKB-cohort-1-Demo?tab=readme-ov-file#collaboration-guidelines] (Git Documentation).
 
