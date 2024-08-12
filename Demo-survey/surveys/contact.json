@@ -1,0 +1,35 @@
+{
+    "title": "Contact us",  
+    "questions": [
+      {
+        "id":1,
+        "type": "text",  
+        "text": "name",
+        "required":true  
+      },
+      {
+        "id":2,
+        "type": "text",  
+        "text": "email",
+        "required":true  
+      },
+      {
+        "id":3,
+        "type": "multiple-choice",  
+        "text": "contact_later", 
+        "options": [  
+          "true",
+          "false"
+        ]
+      }, 
+    
+      {
+        "id":5,
+        "type": "text-area",  
+        "text": "message",
+        "required":true   
+      }
+
+    ]
+  }
+  
